@@ -12,7 +12,11 @@
   <ul>
     <li>Home</li>
     <li>About</li>
-    <li>Shop</li>
+
+    <% @taxonomies.each do |taxonomy| %>
+      <%= nav_tree(taxonomy.root, @taxon, 1) %>
+    <% end %>
+
     <li>Gallery</li>
     <li>Login</li>
     <li>Sign Up</li>

@@ -7,7 +7,7 @@ $garnish-col: #bbb
   width: 100%
   border-bottom: 1px solid $garnish-col
   padding: 20px 20px 0 0
-  font-size: 0.8em
+  font-size: 0.9em
   margin-bottom: 60px
   li
     margin-right: 20px
@@ -21,22 +21,43 @@ $garnish-col: #bbb
       margin-left: 40px
   ul
     white-space: normal
-    margin: 0px 290px 10px 20px
+    margin: 0 290px 10px 20px
   li,
   ul,
   aside,
     display: inline-block
 
 $fancy-text-col: #4466cc
+$ftc-lite: #7799ff
 $secondary-text-col: #888
+
+h1
+  font-size: 2.4em
+  color: $fancy-text-col
+  margin-bottom: 40px
+
+p,
+tbody
+  font-size: 1em
+  line-height: 1.5em
+
+a
+  text-decoration: none
+  color: $fancy-text-col
+
+.continue.button,
+.cart-button
+  border: none
+  color: white
+  margin-top: 15px
+  background: $fancy-text-col
+  padding: 10px
 
 .welcome
   max-width: 700px
   margin: auto
   text-align: center
   h1
-    font-size: 2.4em
-    color: $fancy-text-col
     border-bottom: 1px solid #dde
     margin: 0 0 20px 0
     padding: 0 0 20px 0
@@ -44,3 +65,75 @@ $secondary-text-col: #888
     font-size: 2em
     color: $secondary-text-col
     line-height: 1.3em
+
+#products
+  display: flex
+  max-width: 1300px
+  margin: auto
+  flex-wrap: wrap
+  justify-content: center
+  li
+    display: flex
+    width: 230px
+    margin: 30px
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    .price-holder
+      text-align: center
+      margin-top: 15px
+    #quantity
+      display: none
+
+#breadcrumbs
+  margin-bottom: 20px
+  li
+    display: inline-block
+
+
+#wrapper
+  margin: 0 0 0 40px
+  .columns.six.alpha
+    margin-right: 80px
+    float: left
+    .tmb-all.tmb-1
+      display: inline-block
+      margin: 20px 0 0 20px
+  .columns.ten.omega
+    max-width: 1000px
+    #product-price
+      font-size: 1.2em
+      color: $ftc-lite
+      margin-bottom: 20px
+    [itemprop="description"]
+      margin-bottom: 20px
+    #inside-product-cart-form
+      margin-top: 20px
+    td
+      padding-right: 20px
+    #quantity
+      padding: 10px 5px
+      border-radius: 0
+      border: none
+      background: #ddd
+
+#footer
+  margin-top: 200px
+  height: 300px
+  background: #225533
+
+.links.columns.sixteen.alpha.omega
+  margin-top: 40px
+  button,
+  input
+    background: white
+    border: 1px solid #ddd
+    padding: 10px
+
+#empty-cart
+  margin-top: 70px
+  input.button
+    border: none
+    background: black
+    color: white
+    padding: 10px
