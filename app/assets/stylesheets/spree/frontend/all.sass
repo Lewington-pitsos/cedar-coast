@@ -262,11 +262,17 @@ div.registration-holder,
   #forgot-password > p
     margin-bottom: 15px
 
+@mixin flash-message($main, $garnish)
+    max-width: 900px
+    margin: auto
+    padding: 15px
+    background: $main
+    border-left: 8px solid $garnish
+    text-align: center
 
+#errorExplanation,
 .flash.errors
-  max-width: 900px
-  margin: auto
-  padding: 15px
-  background: lightsalmon
-  border-left: 8px solid DarkSalmon
-  text-align: center
+  @include flash-message(lightsalmon, DarkSalmon)
+
+.flash.notice
+  @include flash-message($login-background, $login-border)
