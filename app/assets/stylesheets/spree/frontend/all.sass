@@ -45,6 +45,7 @@ a
   text-decoration: none
   color: $fancy-text-col
 
+button.primary,
 .continue.button,
 .cart-button
   border: none
@@ -52,6 +53,16 @@ a
   margin-top: 15px
   background: $fancy-text-col
   padding: 10px
+
+.line_item_quantity,
+#wrapper #quantity
+    padding: 10px 5px
+    border-radius: 0
+    border: none
+    border-left: 1px solid #dedede
+    border-top: 1.5px solid #ccc
+    background: #eee
+
 
 .welcome
   max-width: 700px
@@ -111,20 +122,28 @@ a
       margin-top: 20px
     td
       padding-right: 20px
-    #quantity
-      padding: 10px 5px
-      border-radius: 0
-      border: none
-      background: #ddd
 
 #footer
   margin-top: 200px
   height: 300px
   background: #225533
 
+
+#cart-detail
+  tr
+    border-bottom: 1px solid #eee
+    td,
+    th
+      padding: 10px
+    td
+      vertical-align: middle
+    .cart-item-description
+      vertical-align: middle
+  .cart-total
+    border-bottom: none
+
 .links.columns.sixteen.alpha.omega
   margin-top: 40px
-  button,
   input
     background: white
     border: 1px solid #ddd
