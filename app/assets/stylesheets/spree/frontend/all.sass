@@ -34,7 +34,6 @@ $secondary-text-col: #888
 h1
   font-size: 2.4em
   color: $fancy-text-col
-  margin-bottom: 40px
 
 p,
 tbody
@@ -45,14 +44,17 @@ a
   text-decoration: none
   color: $fancy-text-col
 
+@mixin basic-button
+    border: none
+    color: white
+    background: $fancy-text-col
+    padding: 10px
+
 button.primary,
 .continue.button,
 .cart-button
-  border: none
-  color: white
+  @include basic-button
   margin-top: 15px
-  background: $fancy-text-col
-  padding: 10px
 
 .button
   padding: 10px
@@ -225,4 +227,14 @@ div.columns.sixteen
 #checkout-step-address
   display: flex
   justify-content: space-between
+  margin-bottom: 30px
   li
+    width: 20%
+    @include basic-button
+    padding: 20px 10px
+    text-align: center
+    border-right: 1px solid white
+  li.current-first
+      background: $ftc-lite
+  li:last-child
+    border: none
