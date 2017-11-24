@@ -183,13 +183,13 @@ $login-border: #ada
 $guest-background: #ddf
 $guest-border: #aad
 
-@mixin user-related
+@mixin user-related($bor, $bak)
   h6,
   .button
-    border-bottom: 1px solid $login-border
-    background: $login-background
+    border-bottom: 1px solid $bor
+    background: $bak
   .button
-    border: 1px solid $login-border
+    border: 1px solid $bor
   h6
     text-align: center
     padding: 20px
@@ -225,14 +225,12 @@ div.registration-holder,
     #account,
     #guest_checkout
     #account
-      @include user-related
+      @include user-related($login-border, $login-background)
     #guest_checkout
-      h6,
-      .button
-        border-bottom: 1px solid $guest-border
-        background: $guest-background
-      .button
-        border: 1px solid $guest-border
+      @include user-related($guest-border, $guest-background)
+    .back-link
+      display: none
+
 #checkout-step-address
   display: flex
   justify-content: space-between
@@ -248,11 +246,19 @@ div.registration-holder,
   li:last-child
     border: none
 
-.login-holder
+body > .login-holder
   max-width: 400px
   margin: auto
-#existing-customer
-  @include user-related
-  margin: 70px 0 40px 0
-  padding-bottom: 30px
-  border-bottom: 1px solid $login-border
+  #existing-customer
+    @include user-related($login-border, $login-background)
+    padding-bottom: 30px
+    margin: 70px 0 40px 0
+    border-bottom: 1px solid $login-border
+
+.flash.errors
+  max-width: 900px
+  margin: auto
+  padding: 15px
+  background: lightsalmon
+  border-left: 8px solid DarkSalmon
+  text-align: center
