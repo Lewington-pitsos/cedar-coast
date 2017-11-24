@@ -13,9 +13,11 @@
     <li>Home</li>
     <li>About</li>
 
-    <% @taxonomies.each do |taxonomy| %>
-      <%= nav_tree(taxonomy.root, @taxon, 1) %>
-    <% end %>
+
+      <% @taxonomies.each do |taxonomy| %>
+        <%= nav_tree(taxonomy.root, @taxon, 1) %>
+      <% end %>
+
 
     <li>Gallery</li>
     <%= render 'spree/shared/login_bar' %>
