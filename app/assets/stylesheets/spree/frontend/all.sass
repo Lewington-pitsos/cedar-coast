@@ -54,6 +54,9 @@ button.primary,
   background: $fancy-text-col
   padding: 10px
 
+.button
+  padding: 10px
+
 .line_item_quantity,
 #wrapper #quantity
     padding: 10px 5px
@@ -173,7 +176,12 @@ h1.cart
   p
     margin-bottom: 30px
 
-.columns.sixteen
+$login-background: #dfd
+$login-border: #ada
+$guest-background: #ddf
+$guest-border: #aad
+
+div.columns.sixteen
   max-width: 1100px
   margin: auto
   border: 1px solid #ddd
@@ -188,17 +196,31 @@ h1.cart
     text-align: center
     padding: 20px
     margin-bottom: 20px
+  input
+    margin-bottom: 20px
+    border-radius: 0
+    border: 1px solid #ddd
+    padding: 10px
+  form
+    margin-bottom: 60px
+
   #registration
-    padding: 0 50px 100px 50px
+    padding: 50px 50px 100px 50px
     display: flex
     justify-content: space-evenly
     #account,
     #guest_checkout
     #account
-      h6
-        border-bottom: 1px solid #ada
-        background: #dfd
+      h6,
+      .button
+        border-bottom: 1px solid $login-border
+        background: $login-background
+      .button
+        border: 1px solid $login-border
     #guest_checkout
-      h6
-        border-bottom: 1px solid #aad
-        background: #ddf
+      h6,
+      .button
+        border-bottom: 1px solid $guest-border
+        background: $guest-background
+      .button
+        border: 1px solid $guest-border
