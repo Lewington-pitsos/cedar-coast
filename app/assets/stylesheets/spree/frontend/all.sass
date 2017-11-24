@@ -29,6 +29,7 @@ $garnish-col: #bbb
 
 $fancy-text-col: #4466cc
 $ftc-lite: #7799ff
+$ftc-lighter: #9abcff
 $secondary-text-col: #888
 
 h1
@@ -194,7 +195,8 @@ $guest-border: #aad
     text-align: center
     padding: 20px
     margin-bottom: 20px
-  input
+  input,
+  select
     margin-bottom: 20px
     border-radius: 0
     border: 1px solid #ddd
@@ -211,11 +213,14 @@ div.registration-holder,
     border-bottom: 1px solid #ddd
     padding: 20px
     background: #efefef
-  input
+  input,
+  select
     margin-bottom: 20px
     border-radius: 0
     border: 1px solid #ddd
     padding: 10px
+  select
+    background-image: none
   form
     margin-bottom: 60px
   #registration
@@ -261,6 +266,45 @@ div.registration-holder,
     @include devise-interface($login-border, $login-background)
   #forgot-password > p
     margin-bottom: 15px
+
+#checkout_form_address
+  margin: 0 60px
+  p.field
+    margin-bottom: 60px
+  legend
+    font-size: 1.5rem
+    color: $fancy-text-col
+    text-align: left
+    float: left
+  #shipping
+    .field.checkbox
+      margin-top: 50px
+      margin-bottom: 20px
+  #billing
+    .inner
+      padding-top: 109px
+
+#checkout-summary
+  max-width: 980px
+  margin: auto
+  text-align: center
+  margin-bottom: 100px
+  h3
+    box-sizing: border-box
+    background: $fancy-text-col
+    color: white
+    padding: 15px
+    font-size: 1.2rem
+    border-bottom: 1px solid white
+  table
+    width: 100%
+    tr
+      border-bottom: 1px solid white
+    td
+      background: $ftc-lighter
+      color: white
+      padding: 10px
+      width: 50%
 
 @mixin flash-message($main, $garnish)
     max-width: 900px
