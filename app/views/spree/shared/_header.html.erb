@@ -13,6 +13,9 @@
     <li>Home</li>
     <li>About</li>
 
+    <% if condition %>
+
+    <% end %>
     <% @taxonomies.each do |taxonomy| %>
       <%= nav_tree(taxonomy.root, @taxon, 1) %>
     <% end %>
