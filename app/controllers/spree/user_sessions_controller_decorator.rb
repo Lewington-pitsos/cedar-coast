@@ -1,4 +1,4 @@
-class Spree::UserSessionsController < Devise::SessionsController
+class Spree::UserSessionsController
   before_action :load_taxonomies
 
   def load_taxonomies

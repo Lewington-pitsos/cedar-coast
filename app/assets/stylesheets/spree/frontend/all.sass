@@ -183,6 +183,24 @@ $login-border: #ada
 $guest-background: #ddf
 $guest-border: #aad
 
+@mixin user-related
+  h6,
+  .button
+    border-bottom: 1px solid $login-border
+    background: $login-background
+  .button
+    border: 1px solid $login-border
+  h6
+    text-align: center
+    padding: 20px
+    margin-bottom: 20px
+  input
+    margin-bottom: 20px
+    border-radius: 0
+    border: 1px solid #ddd
+    padding: 10px
+
+
 div.registration-holder,
 #checkout
   max-width: 1100px
@@ -193,10 +211,6 @@ div.registration-holder,
     border-bottom: 1px solid #ddd
     padding: 20px
     background: #efefef
-  h6
-    text-align: center
-    padding: 20px
-    margin-bottom: 20px
   input
     margin-bottom: 20px
     border-radius: 0
@@ -204,7 +218,6 @@ div.registration-holder,
     padding: 10px
   form
     margin-bottom: 60px
-
   #registration
     padding: 50px 50px 100px 50px
     display: flex
@@ -212,12 +225,7 @@ div.registration-holder,
     #account,
     #guest_checkout
     #account
-      h6,
-      .button
-        border-bottom: 1px solid $login-border
-        background: $login-background
-      .button
-        border: 1px solid $login-border
+      @include user-related
     #guest_checkout
       h6,
       .button
@@ -239,3 +247,12 @@ div.registration-holder,
       background: $ftc-lite
   li:last-child
     border: none
+
+.login-holder
+  max-width: 400px
+  margin: auto
+#existing-customer
+  @include user-related
+  margin: 70px 0 40px 0
+  padding-bottom: 30px
+  border-bottom: 1px solid $login-border
