@@ -129,7 +129,16 @@ button.primary,
   background: #225533
 
 
+#update-cart
+  max-width: 900px
+  margin: auto
+
+h1.cart
+  text-align: center
+  margin-bottom: 100px
+
 #cart-detail
+  width: 100%
   tr
     border-bottom: 1px solid #eee
     td,
@@ -138,21 +147,28 @@ button.primary,
     td
       vertical-align: middle
     .cart-item-description
-      vertical-align: middle
+      width: 290px
   .cart-total
     border-bottom: none
 
 .links.columns.sixteen.alpha.omega
   margin-top: 40px
+  #update-button
+    float: right
+    margin-right: 60px
   input
     background: white
     border: 1px solid #ddd
     padding: 10px
 
 #empty-cart
-  margin-top: 70px
+  margin-top: 120px
   input.button
     border: none
     background: black
     color: white
     padding: 10px
+
+.empty-cart-warning
+  p
+    margin-bottom: 30px

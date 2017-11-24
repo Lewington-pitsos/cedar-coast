@@ -1,10 +1,10 @@
 <% @body_id = 'cart' %>
 <div data-hook="cart_container">
-  <h1><%= t('spree.shopping_cart') %></h1>
+  <h1 class="cart"><%= t('spree.cart') %></h1>
 
   <% if @order.line_items.empty? %>
 
-    <div data-hook="empty_cart">
+    <div data-hook="empty_cart" class="empty-cart-warning">
       <p><%= t('spree.your_cart_is_empty') %></p>
       <p><%= link_to t('spree.continue_shopping'), products_path, class: 'button continue' %></p>
     </div>
@@ -21,11 +21,11 @@
 
           <div class="links columns sixteen alpha omega" data-hook="cart_buttons">
             <%= order_form.text_field :coupon_code, size: 10, placeholder: t('spree.coupon_code') %>
-            <%= button_tag class: 'primary', id: 'update-button' do %>
-              <%= t('spree.update') %>
-            <% end %>
             <%= button_tag class: 'button checkout primary', id: 'checkout-link', name: 'checkout' do %>
               <%= t('spree.checkout') %>
+            <% end %>
+            <%= button_tag class: 'primary', id: 'update-button' do %>
+              <%= t('spree.update') %>
             <% end %>
           </div>
 
