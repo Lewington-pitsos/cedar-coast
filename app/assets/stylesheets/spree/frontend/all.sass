@@ -246,14 +246,19 @@ div.registration-holder,
   li:last-child
     border: none
 
+@mixin devise-interface($bor, $bak)
+  @include user-related($bor, $bak)
+  padding-bottom: 30px
+  margin: 70px 0 40px 0
+  border-bottom: 1px solid $login-border
+
 #content > .login-holder
   max-width: 400px
   margin: auto
+  #new-customer,
   #existing-customer
-    @include user-related($login-border, $login-background)
-    padding-bottom: 30px
-    margin: 70px 0 40px 0
-    border-bottom: 1px solid $login-border
+    @include devise-interface($login-border, $login-background)
+
 
 .flash.errors
   max-width: 900px
