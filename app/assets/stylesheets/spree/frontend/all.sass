@@ -255,9 +255,12 @@ div.registration-holder,
 #content > .login-holder
   max-width: 400px
   margin: auto
+  #forgot-password,
   #new-customer,
   #existing-customer
     @include devise-interface($login-border, $login-background)
+  #forgot-password > p
+    margin-bottom: 15px
 
 
 .flash.errors
