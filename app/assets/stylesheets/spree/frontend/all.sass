@@ -320,15 +320,15 @@ legend
   padding: 15px
   border-bottom: 1px solid white
 
-@mixin step-box
-  max-width: 700px
+@mixin step-box($width)
+  max-width: $width
   margin: auto
   padding: 60px
   border: 1px solid #eee
 
 #checkout_form_delivery
   #shipping_method
-    @include step-box
+    @include step-box(700px)
     h5,
     h3
       @include block-heading
@@ -354,13 +354,63 @@ legend
 
 #checkout_form_payment
   #payment
-    @include step-box
+    @include step-box(700px)
   div.form-buttons
     max-width: 822px
     margin: auto
   p
     margin-bottom: 20px
 
+#checkout_form_confirm
+  #order_details
+    @include step-box(870px)
+    .row.steps-data
+      display: flex
+      margin-bottom: 40px
+      .columns.omega.four,
+      .columns.alpha.four
+        font-size: 0.8rem
+        margin: 0 8px
+        h6
+          font-weight: bold
+          padding-bottom: 6px
+          border-bottom: 1px solid #efefef
+          margin-bottom: 10px
+        div
+          br
+            margin: 3px 0
+          div
+            margin: 6px 0
+  hr
+    visibility: hidden
+  table
+    th
+      @include block-heading
+    th,
+    td
+      vertical-align: middle
+      padding: 10px
+      h4
+        color: $fancy-text-col
+        font-weight: bold
+    tbody
+      tr
+        border-bottom: 1px solid #efefef
+    tfoot
+      td
+        text-align: right
+    tfoot#subtotal,
+    tfoot#order-total
+      font-size: 1.3rem
+      b
+        font-weight: 400
+    tfoot#tax-adjustments,
+    tfoot#shipment-total
+      color: #999
+      font-size: 1rem
+  div.form-buttons
+    max-width: 992px
+    margin: auto
 
 #checkout-summary
   max-width: 980px
