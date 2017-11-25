@@ -240,7 +240,7 @@ div.registration-holder,
     .back-link
       display: none
 
-#checkout-step-address
+.progress-steps
   display: flex
   justify-content: space-between
   margin-bottom: 30px
@@ -250,8 +250,12 @@ div.registration-holder,
     padding: 20px 10px
     text-align: center
     border-right: 1px solid white
-  li.current-first
+  li.current-first,
+  li.current
       background: $ftc-lite
+  li.completed-first
+    a
+      color: white
   li:last-child
     border: none
 
@@ -260,6 +264,11 @@ div.registration-holder,
   padding-bottom: 30px
   margin: 70px 0 40px 0
   border-bottom: 1px solid $login-border
+
+legend
+  font-size: 1.5rem
+  color: $fancy-text-col
+  text-align: left
 
 #content > .login-holder
   max-width: 400px
@@ -276,9 +285,6 @@ div.registration-holder,
   p.field
     margin-bottom: 60px
   legend
-    font-size: 1.5rem
-    color: $fancy-text-col
-    text-align: left
     float: left
   #shipping,
   #billing
@@ -305,6 +311,43 @@ div.registration-holder,
     min-height: 1242px
   .continue
 
+@mixin block-heading
+  text-align: center
+  box-sizing: border-box
+  background: $fancy-text-col
+  color: white
+  padding: 15px
+  border-bottom: 1px solid white
+
+#checkout_form_delivery
+  #shipping_method
+    max-width: 700px
+    margin: auto
+    padding: 60px
+    border: 1px solid #eee
+    h5,
+    h3
+      @include block-heading
+    table
+      margin-bottom: 60px
+      width: 100%
+      th,
+      td
+        padding: 10px
+      th
+        background: #eee
+      td
+        border-bottom: 1px solid #efefef
+        vertical-align: middle
+    ul
+      margin-top: 20px
+      li
+        margin-bottom: 10px
+        border-bottom: 1px solid #efefef
+  div.form-buttons
+    max-width: 822px
+    margin: auto
+
 
 #checkout-summary
   max-width: 980px
@@ -312,12 +355,8 @@ div.registration-holder,
   text-align: center
   margin-bottom: 100px
   h3
-    box-sizing: border-box
-    background: $fancy-text-col
-    color: white
-    padding: 15px
+    @include block-heading
     font-size: 1.2rem
-    border-bottom: 1px solid white
   table
     width: 100%
     tr
