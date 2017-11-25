@@ -202,7 +202,6 @@ $guest-border: #aad
     border: 1px solid #ddd
     padding: 10px
 
-
 div.registration-holder,
 #checkout
   max-width: 1100px
@@ -220,7 +219,12 @@ div.registration-holder,
     border: 1px solid #ddd
     padding: 10px
   select
-    background-image: none
+    -moz-appearance: none
+    background-image: image-url('select_arrows.png')
+    background-position: 97% center
+    background-repeat: no-repeat
+    background-size: 20px 20px
+
   form
     margin-bottom: 60px
   #registration
@@ -276,13 +280,25 @@ div.registration-holder,
     color: $fancy-text-col
     text-align: left
     float: left
+  #shipping,
+  #billing
+    border: 1px solid #eee
+    width: 200px
+    padding: 30px
+    margin-bottom: 70px
   #shipping
     .field.checkbox
-      margin-top: 50px
+      margin-left: 110px
+      font-size: 0.7rem
+      margin-top: 30px
       margin-bottom: 20px
+      #use_billing
+        vertical-align: 4px
   #billing
     .inner
-      padding-top: 109px
+      padding-top: 90px
+  hr.clear
+    visibility: hidden
 
 #checkout-summary
   max-width: 980px
