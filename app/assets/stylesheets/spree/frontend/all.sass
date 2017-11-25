@@ -2,6 +2,9 @@
 
 $garnish-col: #bbb
 
+html
+  font-family: 'Raleway', sans-serif
+
 .main-navbar
   white-space: nowrap
   width: 100%
@@ -96,6 +99,8 @@ button.primary,
     justify-content: center
     align-items: center
     flex-direction: column
+    a
+      text-align: center
     .price-holder
       text-align: center
       margin-top: 15px
@@ -108,16 +113,23 @@ button.primary,
     display: inline-block
 
 
-#wrapper
-  margin: 0 0 0 40px
+
+#product-details
+  #wrapper
+    max-width: 1000px
+    margin: auto
+  #content.columns.sixteen
+    padding: 80px 80px 140px 80px
+    border: 1px solid #ddd
   .columns.six.alpha
     margin-right: 80px
     float: left
     .tmb-all.tmb-1
       display: inline-block
       margin: 20px 0 0 20px
+  h1
+    margin-bottom: 60px
   .columns.ten.omega
-    max-width: 1000px
     #product-price
       font-size: 1.2em
       color: $ftc-lite
