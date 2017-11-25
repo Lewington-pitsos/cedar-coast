@@ -1,6 +1,10 @@
 @import 'reset'
 
 $garnish-col: #bbb
+$fancy-text-col: #4466cc
+$ftc-lite: #7799ff
+$ftc-lighter: #9abcff
+$secondary-text-col: #888
 
 @mixin step-box($width)
   max-width: $width
@@ -17,13 +21,36 @@ $garnish-col: #bbb
 html
   font-family: 'Raleway', sans-serif
 
+.top-banner
+  height: 250px
+  background-image: image-url('pink_sky.jpg')
+  background-position: 60%
+  text-align: center
+  .banner-overlay
+    box-sizing: border-box
+    padding-top: 60px
+    background-color: rgba(100, 200, 100, 0.3)
+    height: 100%
+    h2,
+    h1
+      color: white
+    h1
+      font-size: 3rem
+    h2
+      font-size: 2rem
+      margin-bottom: 40px
+    h3
+      font-size: 1.2rem
+      padding: 0 40px
+    button
+      @include basic-button($fancy-text-col)
+
 .main-navbar
   white-space: nowrap
   width: 100%
   border-bottom: 1px solid $garnish-col
   padding: 20px 20px 0 0
   font-size: 0.9em
-  margin-bottom: 60px
   li
     margin-right: 20px
     margin-bottom: 10px
@@ -41,11 +68,6 @@ html
   ul,
   aside,
     display: inline-block
-
-$fancy-text-col: #4466cc
-$ftc-lite: #7799ff
-$ftc-lighter: #9abcff
-$secondary-text-col: #888
 
 h1
   font-size: 2.4em
@@ -69,6 +91,9 @@ button.primary,
 .button
   padding: 10px
 
+#wrapper
+  padding-top: 60px
+
 .line_item_quantity,
 #wrapper #quantity
     padding: 10px 5px
@@ -90,13 +115,16 @@ button.primary,
     font-size: 2em
     color: $secondary-text-col
     line-height: 1.3em
-
+[data-hook=homepage_products]
+  //background-image: image-url('full_waterfall.JPG')
+  //background-size: cover
 #products
   display: flex
   max-width: 1300px
   margin: auto
   flex-wrap: wrap
   justify-content: center
+  //background-color: rgba(255, 255, 255, 0.9)
   li
     display: flex
     width: 230px
@@ -126,14 +154,14 @@ button.primary,
   #content.columns.sixteen
     padding: 80px 80px 140px 80px
     border: 1px solid #ddd
+    h1
+      margin-bottom: 60px
   .columns.six.alpha
     margin-right: 80px
     float: left
     .tmb-all.tmb-1
       display: inline-block
       margin: 20px 0 0 20px
-  h1
-    margin-bottom: 60px
   .columns.ten.omega
     #product-price
       font-size: 1.2em
