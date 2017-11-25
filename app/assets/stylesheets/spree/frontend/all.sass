@@ -45,16 +45,16 @@ a
   text-decoration: none
   color: $fancy-text-col
 
-@mixin basic-button
+@mixin basic-button($col)
     border: none
     color: white
-    background: $fancy-text-col
+    background: $col
     padding: 10px
 
 button.primary,
 .continue.button,
 .cart-button
-  @include basic-button
+  @include basic-button($fancy-text-col)
   margin-top: 15px
 
 .button
@@ -246,14 +246,16 @@ div.registration-holder,
   margin-bottom: 30px
   li
     width: 20%
-    @include basic-button
+    @include basic-button(#ccc)
     padding: 20px 10px
     text-align: center
     border-right: 1px solid white
   li.current-first,
   li.current
       background: $ftc-lite
-  li.completed-first
+  li.completed-first,
+  li.completed
+    background: $fancy-text-col
     a
       color: white
   li:last-child
@@ -309,7 +311,6 @@ legend
     visibility: hidden
   .columns.omega.six
     min-height: 1242px
-  .continue
 
 @mixin block-heading
   text-align: center
@@ -319,12 +320,15 @@ legend
   padding: 15px
   border-bottom: 1px solid white
 
+@mixin step-box
+  max-width: 700px
+  margin: auto
+  padding: 60px
+  border: 1px solid #eee
+
 #checkout_form_delivery
   #shipping_method
-    max-width: 700px
-    margin: auto
-    padding: 60px
-    border: 1px solid #eee
+    @include step-box
     h5,
     h3
       @include block-heading
@@ -347,6 +351,15 @@ legend
   div.form-buttons
     max-width: 822px
     margin: auto
+
+#checkout_form_payment
+  #payment
+    @include step-box
+  div.form-buttons
+    max-width: 822px
+    margin: auto
+  p
+    margin-bottom: 20px
 
 
 #checkout-summary
