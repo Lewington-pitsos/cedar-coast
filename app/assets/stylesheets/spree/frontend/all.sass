@@ -258,9 +258,23 @@ h3.home
 @media only screen and (max-width: 1150px)
   #product-details
     #wrapper
-      .columns.ten.omega
-        margin-left: 0
-        clear: both
+      [data-hook="product_show"]
+        width: 95%
+        margin: auto
+        display: flex
+        flex-direction: column
+        align-items: center
+        .columns.six.alpha
+          float: none
+          margin-right: 0
+        .columns.ten.omega
+          margin-left: 0
+          width: 600px
+          padding-left: 0
+      #breadcrumbs
+        width: 600px
+        margin: auto
+        margin-bottom: 30px
 
 #footer
   clear: both
