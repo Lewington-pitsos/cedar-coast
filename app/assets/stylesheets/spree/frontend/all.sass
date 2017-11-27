@@ -1,25 +1,33 @@
 @import 'reset'
+$b-basic: #E5D0AC
+$b-dark: #794E28
+$b-garnish: #D2B58B
+$light-text: #F2EFE4
+$highlight: #DDB853
+$hl-dark: #aa8523
+$pebbles: #5F6573
 
-$garnish-col: #bbb
-$fancy-text-col: #4466cc
-$ftc-lite: #7799ff
-$ftc-lighter: #9abcff
+$fancy-text-col: $b-dark
+$ftc-lite: #9b6f4a
+$ftc-lighter: #bd8f6d
+
 $secondary-text-col: #888
 
 @mixin step-box($width)
   max-width: $width
   margin: auto
   padding: 60px
-  border: 1px solid #eee
+  border: 1px solid $b-garnish
 
 @mixin basic-button($col)
     border: none
-    color: white
+    color: $light-text
     background: $col
     padding: 10px
 
 html
   font-family: 'Raleway', sans-serif
+  background: $b-basic
 
 .top-banner
   height: 250px
@@ -33,7 +41,7 @@ html
     height: 100%
     h2,
     h1
-      color: white
+      color: $light-text
     h1
       font-size: 3rem
     h2
@@ -46,9 +54,9 @@ html
       @include basic-button($fancy-text-col)
 
 .main-navbar
-  white-space: nowrap
+  $light-text-space: nowrap
   width: 100%
-  border-bottom: 1px solid $garnish-col
+  border-bottom: 1px solid $b-dark
   padding: 20px 20px 0 0
   font-size: 0.9em
   li
@@ -62,7 +70,7 @@ html
       display: inline-block
       margin-left: 40px
   ul
-    white-space: normal
+    $light-text-space: normal
     margin: 0 290px 10px 20px
   li,
   ul,
@@ -81,6 +89,10 @@ tbody
 a
   text-decoration: none
   color: $fancy-text-col
+
+input,
+select
+  background: $light-text
 
 button.primary,
 .continue.button,
@@ -101,7 +113,7 @@ button.primary,
     border: none
     border-left: 1px solid #dedede
     border-top: 1.5px solid #ccc
-    background: #eee
+    background: $light-text
 
 .welcome
   max-width: 700px
@@ -153,7 +165,7 @@ button.primary,
     margin: auto
   #content.columns.sixteen
     padding: 80px 80px 140px 80px
-    border: 1px solid #ddd
+    border: 1px solid $b-garnish
     h1
       margin-bottom: 60px
   .columns.six.alpha
@@ -174,26 +186,25 @@ button.primary,
     td
       padding-right: 20px
 
-$footer-text-col: #565656
-
 #footer
   margin-top: 200px
-  background: #f2e09b
+  background: $b-dark
   .content-wrapper
-    padding-top: 70px
+    padding-top: 100px
     display: flex
     justify-content: space-around
     .sustainability,
     .contact
-      color: $footer-text-col
+      color: $light-text
       h6
-        font-size: 1rem
-        padding-bottom: 10px
-        border-bottom: 1px solid $footer-text-col
+        font-size: 1.3rem
+        padding-bottom: 30px
+        border-bottom: 1px solid $light-text
       ul
         margin-top: 20px
         margin-bottom: 100px
         li
+          font-size: 1rem
           padding: 10px
 
 
@@ -208,7 +219,7 @@ h1.cart
 #cart-detail
   width: 100%
   tr
-    border-bottom: 1px solid #eee
+    border-bottom: 1px solid $b-garnish
     td,
     th
       padding: 10px
@@ -225,8 +236,8 @@ h1.cart
     float: right
     margin-right: 60px
   input
-    background: white
-    border: 1px solid #ddd
+    background: $light-text
+    border: 1px solid $b-garnish
     padding: 10px
 
 #empty-cart
@@ -237,11 +248,6 @@ h1.cart
 .empty-cart-warning
   p
     margin-bottom: 30px
-
-$login-background: #dfd
-$login-border: #ada
-$guest-background: #ddf
-$guest-border: #aad
 
 @mixin user-related($bor, $bak)
   h6,
@@ -258,24 +264,24 @@ $guest-border: #aad
   select
     margin-bottom: 20px
     border-radius: 0
-    border: 1px solid #ddd
+    border: 1px solid $b-garnish
     padding: 10px
 
 div.registration-holder,
 #checkout
   max-width: 1100px
   margin: auto
-  border: 1px solid #ddd
+  border: 1px solid $b-garnish
   h1
     text-align: center
-    border-bottom: 1px solid #ddd
+    border-bottom: 1px solid $b-garnish
     padding: 20px
-    background: #efefef
+    background: $b-garnish
   input,
   select
     margin-bottom: 20px
     border-radius: 0
-    border: 1px solid #ddd
+    border: 1px solid $b-garnish
     padding: 10px
   select
     -moz-appearance: none
@@ -293,9 +299,9 @@ div.registration-holder,
     #account,
     #guest_checkout
     #account
-      @include user-related($login-border, $login-background)
+      @include user-related($b-dark, $b-dark)
     #guest_checkout
-      @include user-related($guest-border, $guest-background)
+      @include user-related($b-dark, $b-dark)
     .back-link
       display: none
 
@@ -308,7 +314,7 @@ div.registration-holder,
     @include basic-button(#ccc)
     padding: 20px 10px
     text-align: center
-    border-right: 1px solid white
+    border-right: 1px solid $light-text
   li.current-first,
   li.current
       background: $ftc-lite
@@ -316,7 +322,7 @@ div.registration-holder,
   li.completed
     background: $fancy-text-col
     a
-      color: white
+      color: $light-text
   li:last-child
     border: none
 
@@ -324,7 +330,7 @@ div.registration-holder,
   @include user-related($bor, $bak)
   padding-bottom: 30px
   margin: 70px 0 40px 0
-  border-bottom: 1px solid $login-border
+  border-bottom: 1px solid $b-dark
 
 legend
   font-size: 1.5rem
@@ -338,7 +344,7 @@ legend
   #forgot-password,
   #new-customer,
   #existing-customer
-    @include devise-interface($login-border, $login-background)
+    @include devise-interface($b-dark, $b-dark)
   #forgot-password > p
     margin-bottom: 15px
 
@@ -350,7 +356,7 @@ legend
     float: left
   #shipping,
   #billing
-    border: 1px solid #eee
+    border: 1px solid $b-garnish
     width: 340px
     padding: 30px
     margin-bottom: 70px
@@ -378,9 +384,9 @@ legend
   text-align: center
   box-sizing: border-box
   background: $fancy-text-col
-  color: white
+  color: $light-text
   padding: 15px
-  border-bottom: 1px solid white
+  border-bottom: 1px solid $light-text
 
 #checkout_form_delivery
   #shipping_method
@@ -395,15 +401,15 @@ legend
       td
         padding: 10px
       th
-        background: #eee
+        background: $b-garnish
       td
-        border-bottom: 1px solid #efefef
+        border-bottom: 1px solid $b-garnish
         vertical-align: middle
     ul
       margin-top: 20px
       li
         margin-bottom: 10px
-        border-bottom: 1px solid #efefef
+        border-bottom: 1px solid $b-garnish
   div.form-buttons
     max-width: 822px
     margin: auto
@@ -430,7 +436,7 @@ legend
         h6
           font-weight: bold
           padding-bottom: 6px
-          border-bottom: 1px solid #efefef
+          border-bottom: 1px solid $b-garnish
           margin-bottom: 10px
         div
           br
@@ -451,7 +457,7 @@ legend
         font-weight: bold
     tbody
       tr
-        border-bottom: 1px solid #efefef
+        border-bottom: 1px solid $b-garnish
     tfoot
       td
         text-align: right
@@ -479,10 +485,10 @@ legend
   table
     width: 100%
     tr
-      border-bottom: 1px solid white
+      border-bottom: 1px solid $light-text
     td
       text-align: right
-      border-bottom: 1px solid #efefef
+      border-bottom: 1px solid $b-garnish
       padding: 10px
       width: 50%
 
@@ -499,4 +505,4 @@ legend
   @include flash-message(lightsalmon, DarkSalmon)
 
 .flash.notice
-  @include flash-message($login-background, $login-border)
+  @include flash-message($b-dark, $b-dark)
