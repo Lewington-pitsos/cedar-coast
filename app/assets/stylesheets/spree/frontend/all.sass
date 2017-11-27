@@ -7,11 +7,13 @@ $highlight: #DDB853
 $hl-dark: #aa8523
 $pebbles: #5F6573
 
+$greyed-out: #777
 $fancy-text-col: $b-dark
 $ftc-lite: #9b6f4a
 $ftc-lighter: #bd8f6d
 
-$secondary-text-col: #888
+$error-bg: lightsalmon
+$error-garnish: darksalmon
 
 @mixin step-box($width)
   max-width: $width
@@ -103,6 +105,9 @@ button.primary,
 .button
   padding: 10px
 
+input.button.primary
+  @include basic-button($fancy-text-col)
+
 #wrapper
   padding-top: 60px
 
@@ -125,7 +130,7 @@ button.primary,
     padding: 0 0 20px 0
   h2
     font-size: 2em
-    color: $secondary-text-col
+    color: $light-text
     line-height: 1.3em
 [data-hook=homepage_products]
   //background-image: image-url('full_waterfall.JPG')
@@ -244,7 +249,6 @@ h1.cart
   margin-top: 120px
   input.button
     @include basic-button($fancy-text-col)
-
 .empty-cart-warning
   p
     margin-bottom: 30px
@@ -257,9 +261,11 @@ h1.cart
   .button
     border: 1px solid $bor
   h6
+    font-size: 1.3rem
     text-align: center
     padding: 20px
     margin-bottom: 20px
+    color: $light-text
   input,
   select
     margin-bottom: 20px
@@ -311,7 +317,7 @@ div.registration-holder,
   margin-bottom: 30px
   li
     width: 20%
-    @include basic-button(#ccc)
+    @include basic-button($greyed-out)
     padding: 20px 10px
     text-align: center
     border-right: 1px solid $light-text
@@ -502,7 +508,7 @@ legend
 
 #errorExplanation,
 .flash.errors
-  @include flash-message(lightsalmon, DarkSalmon)
+  @include flash-message($error-bg, $error-garnish)
 
 .flash.notice
   @include flash-message($b-dark, $b-dark)
