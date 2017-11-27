@@ -549,6 +549,8 @@ legend
     li
       margin: 4px
 
-
+.flash.error
+  @include flash-message($error-bg, $error-garnish, $err-col)
+    
 .flash.notice
   @include flash-message($b-dark, $b-dark, $err-col)
