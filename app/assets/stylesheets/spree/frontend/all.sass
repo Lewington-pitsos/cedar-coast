@@ -12,9 +12,6 @@ $fancy-text-col: $b-dark
 $ftc-lite: #9b6f4a
 $ftc-lighter: #bd8f6d
 
-$error-bg: lightsalmon
-$error-garnish: darksalmon
-
 @mixin step-box($width)
   max-width: $width
   margin: auto
@@ -28,7 +25,12 @@ $error-garnish: darksalmon
     padding: 10px
 
 $err-col: #AD0008
-$err-bak: #FF8F0C
+$err-bak: lightsalmon
+$err-garnish: darksalmon
+
+$succ-col: #4F8A10
+$succ-bak: #DFF2BF
+$succ-garnish: #95a37d
 
 @mixin flash($col, $bak)
   display: block
@@ -533,7 +535,7 @@ legend
 
 #errorExplanation,
 .flash.errors
-  @include flash-message($error-bg, $error-garnish, $err-col)
+  @include flash-message($err-bak,$err-garnish, $err-col)
 
 #errorExplanation
   margin-bottom: 60px
@@ -550,7 +552,8 @@ legend
       margin: 4px
 
 .flash.error
-  @include flash-message($error-bg, $error-garnish, $err-col)
-    
-.flash.notice
-  @include flash-message($b-dark, $b-dark, $err-col)
+  @include flash-message($err-bak, $err-garnish, $err-col)
+
+.flash.notice,
+.flash.success
+  @include flash-message($succ-bak, $succ-garnish, $succ-col)
