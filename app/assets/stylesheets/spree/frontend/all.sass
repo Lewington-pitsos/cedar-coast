@@ -42,6 +42,7 @@ $succ-garnish: #95a37d
 
 html
   font-family: 'Raleway', sans-serif
+  background: $b-basic
 
 .top-banner
   background-image: image-url('pink_sky.jpg')
@@ -128,7 +129,6 @@ input.button.primary
 
 #wrapper
   padding-top: 60px
-  background: $b-basic
   padding-bottom: 200px
 
 .line_item_quantity,
@@ -190,43 +190,45 @@ input.button.primary
     padding-left: 70px
     padding-right: 70px
     min-height: 600px
-  #content.columns.sixteen
-    h1
+    #content.columns.sixteen
+      h1
+        margin-bottom: 60px
+    .columns.six.alpha
+      margin-right: 80px
       margin-bottom: 60px
-  .columns.six.alpha
-    margin-right: 80px
-    margin-bottom: 100px
-    float: left
-    .tmb-all.tmb-1
-      display: inline-block
-      margin: 20px 0 0 20px
-    #product-thumbnails
-      li
-        margin: 15px 40px 0 0
+      float: left
+      .tmb-all.tmb-1
         display: inline-block
-        img
-          border-radius: 5px
-  .columns.ten.omega
-    margin-left: 600px
-    .column-holder
-    #product-price
-      font-size: 1.2em
-      color: $ftc-lite
-      margin-bottom: 20px
-    [itemprop="description"]
-      margin-bottom: 20px
-    #inside-product-cart-form
-      margin-top: 20px
-    td
-      padding-right: 20px
+        margin: 20px 0 0 20px
+      #product-thumbnails
+        li
+          margin: 15px 40px 0 0
+          display: inline-block
+          img
+            border-radius: 5px
+    .columns.ten.omega
+      margin-left: 600px
+      .column-holder
+      #product-price
+        font-size: 1.2em
+        color: $ftc-lite
+        margin-bottom: 20px
+      [itemprop="description"]
+        margin-bottom: 20px
+      #inside-product-cart-form
+        margin-top: 20px
+      td
+        padding-right: 20px
 
 @media only screen and (max-width: 1150px)
   #product-details
-    .columns.ten.omega
-      margin-left: 0
-      clear: both
+    #wrapper
+      .columns.ten.omega
+        margin-left: 0
+        clear: both
 
 #footer
+  clear: both
   background: $b-dark
   .content-wrapper
     padding-top: 100px
