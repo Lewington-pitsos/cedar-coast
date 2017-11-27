@@ -179,25 +179,36 @@ input.button.primary
       display: none
 
 #breadcrumbs
-  margin-bottom: 20px
+  margin-bottom: 40px
   li
     display: inline-block
 
 
 
 #product-details
+  #wrapper
+    padding-left: 70px
+    padding-right: 70px
+    min-height: 600px
   #content.columns.sixteen
-    padding: 80px 80px 140px 80px
-    border: 1px solid $b-garnish
     h1
       margin-bottom: 60px
   .columns.six.alpha
     margin-right: 80px
+    margin-bottom: 100px
     float: left
     .tmb-all.tmb-1
       display: inline-block
       margin: 20px 0 0 20px
+    #product-thumbnails
+      li
+        margin: 15px 40px 0 0
+        display: inline-block
+        img
+          border-radius: 5px
   .columns.ten.omega
+    margin-left: 600px
+    .column-holder
     #product-price
       font-size: 1.2em
       color: $ftc-lite
@@ -208,6 +219,12 @@ input.button.primary
       margin-top: 20px
     td
       padding-right: 20px
+
+@media only screen and (max-width: 1150px)
+  #product-details
+    .columns.ten.omega
+      margin-left: 0
+      clear: both
 
 #footer
   background: $b-dark
@@ -228,6 +245,7 @@ input.button.primary
         li
           font-size: 1rem
           padding: 10px
+
 
 
 body#cart
@@ -323,7 +341,6 @@ div.registration-holder,
       //width: 250px
     .unfilled
       border: 1px solid red
-
 
 #registration
   padding: 50px 50px 100px 50px

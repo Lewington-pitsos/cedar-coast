@@ -7,7 +7,7 @@
 
         <div id="product-images" data-hook="product_images">
           <div id="main-image" data-hook>
-            <%= render partial: 'image' %>
+            <%= render partial: 'image', locals: {size: :large} %>
           </div>
           <div id="thumbnails" data-hook>
             <%= render partial: 'thumbnails' %>
@@ -23,7 +23,7 @@
 
     <div class="columns ten omega" data-hook="product_right_part">
       <div class="row" data-hook="product_right_part_wrap">
-
+        <div class="column-holder">
         <div id="product-description" data-hook="product_description">
 
           <h1 class="product-title" itemprop="name"><%= @product.name %></h1>
@@ -41,7 +41,7 @@
           <div id="cart-form" data-hook="cart_form">
             <%= render partial: 'cart_form' %>
           </div>
-
+        </div>
         </div>
       </div>
     </div>
