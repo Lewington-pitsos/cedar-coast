@@ -292,33 +292,34 @@ div.registration-holder,
 #checkout
   max-width: 1100px
   margin: auto
-  border: 1px solid $b-garnish
-  h1
-    text-align: center
-    border-bottom: 1px solid $b-garnish
-    padding: 20px
-    background: $b-garnish
-  input,
-  select
-    margin-bottom: 20px
-    border-radius: 0
+  #checkout-information
     border: 1px solid $b-garnish
-    padding: 10px
-  select
-    -moz-appearance: none
-    background-image: image-url('select_arrows.png')
-    background-position: 97% center
-    background-repeat: no-repeat
-    background-size: 20px 20px
-  form
-    margin-bottom: 60px
-  label.error
-    //@include flash($err-col, $err-bak)
-    //box-sizing: border-box
-    //margin-top: -10px
-    //width: 250px
-  .unfilled
-    border: 1px solid red
+    h1
+      text-align: center
+      border-bottom: 1px solid $b-garnish
+      padding: 20px
+      background: $b-garnish
+    input,
+    select
+      margin-bottom: 20px
+      border-radius: 0
+      border: 1px solid $b-garnish
+      padding: 10px
+    select
+      -moz-appearance: none
+      background-image: image-url('select_arrows.png')
+      background-position: 97% center
+      background-repeat: no-repeat
+      background-size: 20px 20px
+    form
+      margin-bottom: 60px
+    label.error
+      //@include flash($err-col, $err-bak)
+      //box-sizing: border-box
+      //margin-top: -10px
+      //width: 250px
+    .unfilled
+      border: 1px solid red
 
 
 #registration
@@ -521,20 +522,33 @@ legend
       padding: 10px
       width: 50%
 
-@mixin flash-message($main, $garnish)
+@mixin flash-message($main, $garnish, $text)
     max-width: 900px
     margin: auto
     padding: 15px
     background: $main
+    color: $text
     border-left: 8px solid $garnish
     text-align: center
 
 #errorExplanation,
 .flash.errors
-  @include flash-message($error-bg, $error-garnish)
+  @include flash-message($error-bg, $error-garnish, $err-col)
 
 #errorExplanation
-  display: none
+  margin-bottom: 60px
+  padding-left: 20px
+  text-align: left
+  h2
+    display: none
+  ul
+    margin-left: 20px
+    margin-top: 10px
+    font-size: 0.7rem
+    list-style-type: disc
+    li
+      margin: 4px
+
 
 .flash.notice
-  @include flash-message($b-dark, $b-dark)
+  @include flash-message($b-dark, $b-dark, $err-col)
