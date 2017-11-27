@@ -29,26 +29,24 @@ $error-garnish: darksalmon
 
 html
   font-family: 'Raleway', sans-serif
-  background: $b-basic
 
 .top-banner
-  height: 250px
   background-image: image-url('pink_sky.jpg')
   background-position: 60%
-  text-align: center
   .banner-overlay
     box-sizing: border-box
-    padding-top: 60px
-    background-color: rgba(100, 200, 100, 0.3)
+    padding-top: 70px
+    background-color: rgba(100, 200, 100, 0.4)
     height: 100%
     h2,
     h1
+      text-align: center
       color: $light-text
     h1
       font-size: 3rem
     h2
       font-size: 2rem
-      margin-bottom: 40px
+      margin-bottom: 110px
     h3
       font-size: 1.2rem
       padding: 0 40px
@@ -58,7 +56,7 @@ html
 .main-navbar
   $light-text-space: nowrap
   width: 100%
-  border-bottom: 1px solid $b-dark
+  border-bottom: 1px solid $pebbles
   padding: 20px 20px 0 0
   font-size: 0.9em
   li
@@ -67,11 +65,15 @@ html
 
   aside
     float: right
-    margin-right: 40px
+    text-align: right
     div
       display: inline-block
       margin-left: 40px
-  ul
+    .amount
+      font-weight: bolder
+      padding-left: 5px
+      border-left: 1px solid $pebbles
+  ul.main
     $light-text-space: normal
     margin: 0 290px 10px 20px
   li,
@@ -110,6 +112,8 @@ input.button.primary
 
 #wrapper
   padding-top: 60px
+  background: $b-basic
+  padding-bottom: 200px
 
 .line_item_quantity,
 #wrapper #quantity
@@ -141,7 +145,6 @@ input.button.primary
   margin: auto
   flex-wrap: wrap
   justify-content: center
-  //background-color: rgba(255, 255, 255, 0.9)
   li
     display: flex
     width: 230px
@@ -149,6 +152,8 @@ input.button.primary
     justify-content: center
     align-items: center
     flex-direction: column
+    .product-image
+      margin-bottom: 5px
     a
       text-align: center
     .price-holder
@@ -192,7 +197,6 @@ input.button.primary
       padding-right: 20px
 
 #footer
-  margin-top: 200px
   background: $b-dark
   .content-wrapper
     padding-top: 100px
