@@ -27,6 +27,17 @@ $error-garnish: darksalmon
     background: $col
     padding: 10px
 
+$err-col: #AD0008
+$err-bak: #FF8F0C
+
+@mixin flash($col, $bak)
+  display: block
+  margin: 5px 0
+  padding: 12px
+  background: $bak
+  color: $col
+
+
 html
   font-family: 'Raleway', sans-serif
 
@@ -93,6 +104,9 @@ tbody
 a
   text-decoration: none
   color: $fancy-text-col
+
+img
+  border-radius: 2%
 
 input,
 select
@@ -170,9 +184,6 @@ input.button.primary
 
 
 #product-details
-  #wrapper
-    max-width: 1000px
-    margin: auto
   #content.columns.sixteen
     padding: 80px 80px 140px 80px
     border: 1px solid $b-garnish
@@ -218,7 +229,7 @@ input.button.primary
 
 
 body#cart
-  #wrapper
+  #content
     @include step-box(900px)
 
 h1.cart
@@ -299,21 +310,29 @@ div.registration-holder,
     background-position: 97% center
     background-repeat: no-repeat
     background-size: 20px 20px
-
   form
     margin-bottom: 60px
-  #registration
-    padding: 50px 50px 100px 50px
-    display: flex
-    justify-content: space-evenly
-    #account,
-    #guest_checkout
-    #account
-      @include user-related($b-dark, $b-dark)
-    #guest_checkout
-      @include user-related($b-dark, $b-dark)
-    .back-link
-      display: none
+  label.error
+    //@include flash($err-col, $err-bak)
+    //box-sizing: border-box
+    //margin-top: -10px
+    //width: 250px
+  .unfilled
+    border: 1px solid red
+
+
+#registration
+  padding: 50px 50px 100px 50px
+  display: flex
+  justify-content: space-evenly
+  #account,
+  #guest_checkout
+  #account
+    @include user-related($b-dark, $b-dark)
+  #guest_checkout
+    @include user-related($b-dark, $b-dark)
+  .back-link
+    display: none
 
 .progress-steps
   display: flex
@@ -513,6 +532,9 @@ legend
 #errorExplanation,
 .flash.errors
   @include flash-message($error-bg, $error-garnish)
+
+#errorExplanation
+  display: none
 
 .flash.notice
   @include flash-message($b-dark, $b-dark)
