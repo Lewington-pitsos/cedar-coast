@@ -98,6 +98,13 @@ html
 h1
   font-size: 2.4em
   color: $fancy-text-col
+  font-weight: bold
+
+h3
+  font-size: 1.5rem
+  color: $fancy-text-col
+  font-weight: bold
+
 
 p,
 tbody
@@ -172,7 +179,6 @@ h3.home
   margin: auto
   border-radius: 10px
   margin-bottom: 70px
-  margin-top: -25px
   .overlay
     height: 100%
     width: 100%
@@ -593,9 +599,32 @@ legend
       padding: 10px
       width: 50%
 
+.user-info
+  border-left: 1px solid $b-garnish
+  padding-left: 30px
+  margin-left: 100px
+  h1
+    margin-bottom: 40px
+  dl
+    margin-bottom: 70px
+    width: 400px
+    dt,
+    dd
+      display: inline-block
+    dd
+      margin-left: 30px
+    dt
+      font-weight: bold
+  .account-my-orders
+    h3
+      margin-bottom: 20px
+
+
+
 @mixin flash-message($main, $garnish, $text)
     max-width: 900px
     margin: auto
+    margin-bottom: 10px
     padding: 15px
     background: $main
     color: $text
@@ -619,6 +648,7 @@ legend
     list-style-type: disc
     li
       margin: 4px
+
 
 .flash.error
   @include flash-message($err-bak, $err-garnish, $err-col)
