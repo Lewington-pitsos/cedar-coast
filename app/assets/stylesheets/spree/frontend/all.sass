@@ -600,6 +600,7 @@ legend
       width: 50%
 
 .user-info
+  @include user-related($b-dark, $b-dark)
   border-left: 1px solid $b-garnish
   padding-left: 30px
   margin-left: 100px
@@ -624,7 +625,7 @@ legend
 @mixin flash-message($main, $garnish, $text)
     max-width: 900px
     margin: auto
-    margin-bottom: 10px
+    margin-bottom: 20px
     padding: 15px
     background: $main
     color: $text
