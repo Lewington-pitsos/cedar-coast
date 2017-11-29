@@ -5,14 +5,17 @@
 <% end %>
 
 <div data-hook="homepage_products">
-  <div id="welcome-banner">
-    <div class="overlay">
-      <h2>Welcome to Cedar Coast</h2>
-      <p>
-        Feel free to browse all you like...
-      </p>
+  <div id="welcome-wrapper">
+    <div id="welcome-banner">
+      <div class="overlay">
+        <h2>Welcome to Cedar Coast</h2>
+        <p>
+          Feel free to browse all you like...
+        </p>
+      </div>
     </div>
   </div>
+
   <h3 class='home'>Best Selling Soaps</h3>
   <% cache(cache_key_for_products) do %>
     <%= render partial: 'spree/shared/products', locals: { products: @products } %>
