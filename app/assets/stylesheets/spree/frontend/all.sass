@@ -192,15 +192,22 @@ h3.home
   margin: auto
   flex-wrap: wrap
   justify-content: space-between
+  padding-left: 30px
+  margin-top: 30px
   li
+    flex-grow: 1
     display: flex
     padding: 0
-    margin: 30px
     justify-content: center
     align-items: center
     flex-direction: column
+    padding-right: 20px
     .product-image
+      width: 100%
       margin-bottom: 5px
+      img
+        width: 100% !important
+
     a
       text-align: center
     .price-holder
@@ -551,7 +558,7 @@ legend
         font-weight: 400
     tfoot#tax-adjustments,
     tfoot#shipment-total
-      color: #999
+      color: #666
       font-size: 1rem
   div.form-buttons
     max-width: 992px

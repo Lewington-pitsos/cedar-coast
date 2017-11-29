@@ -9,6 +9,7 @@ gem 'pry'
 gem 'carrierwave', '~> 1.0'
 gem 'solidus'
 gem 'solidus_auth_devise'
+gem "solidus_gateway"
 gem 'bootstrap-sass'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
