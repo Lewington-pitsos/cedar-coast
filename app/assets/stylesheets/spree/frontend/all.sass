@@ -409,9 +409,18 @@ div.registration-holder,
       background: $ftc-lite
   li.completed-first,
   li.completed
-    background: $fancy-text-col
+    background: $b-dark
     a
       color: $light-text
+    a::after
+      display: inline-block
+      margin-left: 5px
+      width: 10px
+      height: 10px
+      content: '   '
+      background: image-url('tick.png')
+      background-size: contain
+
   li:last-child
     border: none
 
