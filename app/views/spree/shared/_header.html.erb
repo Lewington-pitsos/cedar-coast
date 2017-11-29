@@ -18,14 +18,11 @@
   <ul class="main">
     <li id="home-link" data-hook><%= link_to t('spree.home'), spree.root_path %></li>
     <li><%= link_to 'About', about_path %></li>
-
-
-      <% @taxonomies.first.root.children.each do |taxonomy| %>
-        <%= nav_tree(taxonomy, @taxon, 1) %>
-      <% end %>
-
-
-    <li>Gallery</li>
+    |
+    <% @taxonomies.first.root.children.each do |taxonomy| %>
+      <%= nav_tree(taxonomy, @taxon, 1) %>
+    <% end %>
+    |
     <%= render 'spree/shared/login_bar' %>
   </ul>
 </nav>
