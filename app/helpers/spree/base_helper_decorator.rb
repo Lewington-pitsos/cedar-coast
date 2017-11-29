@@ -19,6 +19,8 @@ module Spree::BaseHelper
         crumbs << [taxon.name, spree.nested_taxons_path(taxon.permalink)]
       end
 
+      crumbs = kill_bad_crumbs(crumbs, ['Shop', 'Extras'])
+
       separator = raw(separator)
 
       items = crumbs.each_with_index.collect do |crumb, i|
@@ -32,4 +34,10 @@ module Spree::BaseHelper
       content_tag(:nav, content_tag(:ol, raw(items.map(&:mb_chars).join), class: breadcrumb_class, itemscope: '', itemtype: 'https://schema.org/BreadcrumbList'), id: 'breadcrumbs', class: 'sixteen columns')
     end
 
+
+    def kill_bad_crumbs(array, bad_crumbs)
+      array.select do |crumb|
+        crumb - bad_crumbs == crumb
+      end
+    end
 end
