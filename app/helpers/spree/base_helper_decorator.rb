@@ -4,7 +4,6 @@ module Spree::BaseHelper
     end
 
     def nav_tree(root_taxon, current_taxon, max_level = 1)
-      return '' if max_level < 1 || root_taxon.children.empty?
       content_tag :li, class: 'category' do
        link_to(root_taxon.name, seo_url(root_taxon))
       end

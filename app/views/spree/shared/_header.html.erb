@@ -20,8 +20,8 @@
     <li><%= link_to 'About', about_path %></li>
 
 
-      <% @taxonomies.each do |taxonomy| %>
-        <%= nav_tree(taxonomy.root, @taxon, 1) %>
+      <% @taxonomies.first.root.children.each do |taxonomy| %>
+        <%= nav_tree(taxonomy, @taxon, 1) %>
       <% end %>
 
 
