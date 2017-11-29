@@ -156,32 +156,35 @@ h3.home
   text-align: center
   padding: 10px
 
-#welcome-wrapper
-  #welcome-banner
-    background-image: image-url('rails.jpg')
-    background-size: cover
-    background-position: center
-    text-align: center
-    height: 400px
-    margin: 0 30px
-    border-radius: 10px
-    margin-bottom: 70px
-    .overlay
-      height: 100%
-      width: 100%
+[data-hook="homepage_products"]
+  #welcome-wrapper
+    #welcome-banner
+      background-image: image-url('rails.jpg')
+      background-size: cover
+      background-position: center
+      text-align: center
+      height: 400px
+      margin: 0 30px
       border-radius: 10px
-      background-color: rgba(121,	78,	40, 0.8)
-      //background-color: rgba(221,	184,	83, 0.7)
-      //background-color: $highlight
-      color: $highlight
-      h2
-        width: 400px
-        margin: auto
-        font-weight: bold
-        padding-top: 130px
-        font-size: 2.8rem
-      p
-        font-size: 1.8rem
+      margin-bottom: 70px
+      .overlay
+        height: 100%
+        width: 100%
+        border-radius: 10px
+        background-color: rgba(121,	78,	40, 0.8)
+        //background-color: rgba(221,	184,	83, 0.7)
+        //background-color: $highlight
+        color: $highlight
+        h2
+          width: 400px
+          margin: auto
+          font-weight: bold
+          padding-top: 130px
+          font-size: 2.8rem
+        p
+          font-size: 1.8rem
+  .taxon
+    margin-bottom: 60px
 
 #products
   display: flex
