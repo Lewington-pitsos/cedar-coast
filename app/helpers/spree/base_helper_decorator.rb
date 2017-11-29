@@ -19,6 +19,8 @@ module Spree::BaseHelper
         crumbs << [taxon.name, spree.nested_taxons_path(taxon.permalink)]
       end
 
+      crumbs << product_name if product_name
+
       crumbs = kill_bad_crumbs(crumbs, ['Shop', 'Extras'])
 
       separator = raw(separator)
@@ -38,6 +40,14 @@ module Spree::BaseHelper
     def kill_bad_crumbs(array, bad_crumbs)
       array.select do |crumb|
         crumb - bad_crumbs == crumb
+      end
+    end
+
+    def product_name
+      if @body_id == 'product-details'
+        [@product.name, "#"]
+      else
+        false
       end
     end
 end
