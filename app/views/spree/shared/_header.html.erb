@@ -17,7 +17,7 @@
   </aside>
   <ul class="main">
     <li id="home-link" data-hook><%= link_to t('spree.home'), spree.root_path %></li>
-    <li>About</li>
+    <li><%= link_to 'About', about_path %></li>
 
 
       <% @taxonomies.each do |taxonomy| %>

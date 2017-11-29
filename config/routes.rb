@@ -6,5 +6,9 @@ Rails.application.routes.draw do
   # We ask that you don't use the :as option here, as Solidus relies on it being the default of "spree"
   mount Spree::Core::Engine, at: '/'
 
+  Spree::Core::Engine.routes.draw do
+    get '/about' => 'home#about', as: :about
+  end
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
