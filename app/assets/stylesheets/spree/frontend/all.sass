@@ -138,7 +138,7 @@ input.button.primary
   @include basic-button($fancy-text-col)
 
 #wrapper
-  padding-top: 60px
+  padding-top: 40px
   padding-bottom: 200px
 
 .line_item_quantity,
@@ -157,8 +157,6 @@ h3.home
   padding: 10px
 
 #welcome-wrapper
-  max-width: 98%
-  margin: auto
   #welcome-banner
     background-image: image-url('rails.jpg')
     background-size: cover
@@ -187,7 +185,6 @@ h3.home
 
 #products
   display: flex
-  max-width: 98%
   margin: auto
   flex-wrap: wrap
   justify-content: space-between
@@ -210,17 +207,22 @@ h3.home
 
 
 #breadcrumbs
+  max-width: 100%
+  margin-left: 30px
   margin-bottom: 40px
   li
     display: inline-block
 
-
+h1.taxon-title
+  margin-left: 30px
 
 #product-details
   #wrapper
     padding-left: 70px
     padding-right: 70px
     min-height: 600px
+    #breadcrumbs
+      margin-left: 0px
     #content.columns.sixteen
       h1
         margin-bottom: 60px
