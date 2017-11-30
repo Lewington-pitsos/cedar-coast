@@ -196,6 +196,7 @@ h3.home
       max-width: 240px
       .product-image
 
+$radius: 4px
 
 #products
   display: flex
@@ -204,13 +205,14 @@ h3.home
   justify-content: space-between
   margin-top: 30px
   li
+    border-radius: $radius
+    background: $b-garnish
     flex-grow: 1
     display: flex
-    padding: 0
     justify-content: center
     align-items: center
     flex-direction: column
-    padding: 0 25px 40px 25px
+    margin: 0 25px 40px 25px
     .product-image
       width: 100%
       margin-bottom: 5px
@@ -224,6 +226,11 @@ h3.home
       margin-top: 15px
     #quantity
       display: none
+    #cart-form
+      width: 100%
+      #add-to-cart-button
+        width: 100%
+        border-radius: 0 0 $radius $radius
 
 
 #breadcrumbs
