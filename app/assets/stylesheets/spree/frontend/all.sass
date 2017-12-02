@@ -142,6 +142,8 @@ a
   color: $fancy-text-col
 
 img
+  //border: 8px solid #888
+  //box-sizing: border-box
   border-radius: 4px
 
 input,
@@ -184,19 +186,18 @@ h3.home
 [data-hook="homepage_products"]
   #welcome-wrapper
     #welcome-banner
+      width: 100%
       background-image: image-url('rails.jpg')
       background-size: cover
       background-position: center
       text-align: center
       height: 400px
-      margin: 0 25px
-      border-radius: 10px
+      margin-top: -40px
       margin-bottom: 70px
       .overlay
         height: 100%
         width: 100%
-        border-radius: 10px
-        background-color: rgba(121,	78,	40, 0.8)
+        background-color: rgba(121,	78,	40, 0.6)
         //background-color: rgba(221,	184,	83, 0.7)
         //background-color: $highlight
         color: $highlight
