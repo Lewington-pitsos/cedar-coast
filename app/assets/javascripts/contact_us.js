@@ -1,10 +1,11 @@
 $(window).load(function() {
-  $('.contact-us').on('click', function(e) {
-    e.preventDefault();
-    $("html, body").animate({ scrollTop: $(document).height() }, 300);
-  })
-  $('#page-top').on('click', function(e) {
-    e.preventDefault();
-    $("html, body").animate({ scrollTop: 0 }, 300);
-  })
+  $(document).on('click', function(e) {
+    if ($(e.target).attr('id') == 'page-top') {      e.preventDefault();
+      $("html, body").animate({ scrollTop: 0 }, 300);
+    } else if ($(e.target).attr('class') == 'contact-us') {
+      e.preventDefault();
+      $("html, body").animate({ scrollTop: $(document).height() }, 300);
+    }
+
+  });
 });
