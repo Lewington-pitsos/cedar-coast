@@ -174,9 +174,6 @@ input.button,
 #wrapper
   padding-bottom: 200px
 
-#content
-  margin-top: 40px
-
 .line_item_quantity,
 #wrapper #quantity
     padding: 10px 5px
@@ -219,8 +216,6 @@ h3.home
     .overlay
       text-align: center
       background-color: rgba(121,	78,	40, 0.6)
-      //background-color: rgba(221,	184,	83, 0.7)
-      //background-color: $highlight
       color: $highlight
       h2
         width: 400px
@@ -277,6 +272,7 @@ h3.home
 
 #breadcrumbs
   max-width: 100%
+  padding-top: 40px
   margin-left: 30px
   margin-bottom: 40px
   li
@@ -429,6 +425,9 @@ div.registration-holder,
 #checkout
   max-width: 1100px
   margin: auto
+  margin-top: 60px
+  h1
+    text-align: center
   #checkout-information
     border: 1px solid $b-garnish
     h1
@@ -479,9 +478,12 @@ div.registration-holder,
   li
     width: 20%
     @include basic-button($greyed-out)
-    padding: 20px 10px
     text-align: center
     border-right: 1px solid $light-text
+    padding: 0
+    span
+      display: block
+      padding: 20px 10px
   li.current-first,
   li.current
     background: $ftc-lite
@@ -490,8 +492,12 @@ div.registration-holder,
     background: $b-dark
     &:hover
       background: $b-darker
+    span
+      padding: 0
     a
       color: $light-text
+      display: block
+      padding: 20px 10px
     a::after
       display: inline-block
       margin-left: 5px
