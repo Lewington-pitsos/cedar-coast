@@ -172,8 +172,10 @@ input.button,
   padding: 10px
 
 #wrapper
-  padding-top: 40px
   padding-bottom: 200px
+
+#content
+  margin-top: 40px
 
 .line_item_quantity,
 #wrapper #quantity
@@ -196,7 +198,6 @@ h3.home
   #welcome-wrapper
     width: 100%
     height: 400px
-    margin-top: -40px
     margin-bottom: 70px
     position: relative
     .welcome-banner,
@@ -364,6 +365,7 @@ h1.taxon-title
 body#cart
   #content
     @include step-box(900px)
+    margin-top: 40px
 
 h1.cart
   text-align: center
@@ -749,9 +751,8 @@ $about-margin: 20px
 
 
 @mixin flash-message($main, $garnish, $text)
-    max-width: 900px
+    width: 100%
     margin: auto
-    margin-bottom: 20px
     padding: 15px
     background: $main
     color: $text
