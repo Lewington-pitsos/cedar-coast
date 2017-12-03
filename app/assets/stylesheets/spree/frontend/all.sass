@@ -151,7 +151,8 @@ input.button,
   border-bottom: 1px solid $pebbles
   padding: 20px 0 0 0
   font-size: 1.1em
-  vertical-align: middle
+  .main
+    width: 800px
   li
     margin-right: 20px
     height: 40px
@@ -170,6 +171,7 @@ input.button,
       background: $b-garnish
       top: 100%
       width: 150px
+      border-top: 1px solid $pebbles
       &.hidden
         display: none
       li
@@ -180,8 +182,8 @@ input.button,
     a
       vertical-align: middle
     a.devider
-      //padding-left: 10px
-      //border-left: 1px solid $pebbles
+      padding-left: 10px
+      border-left: 1px solid $pebbles
   aside
     float: right
     text-align: right
