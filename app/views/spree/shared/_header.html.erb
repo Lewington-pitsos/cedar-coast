@@ -19,12 +19,21 @@
     <li id="home-link" data-hook><%= link_to t('spree.home'), spree.root_path %></li>
     <li><%= link_to 'About', about_path %></li>
     <li><%= link_to 'Contact Us', '#', class: 'contact-us' %></li>
-    |
-    <% @taxonomies.first.root.children.each do |taxonomy| %>
-      <%= nav_tree(taxonomy, @taxon, 1) %>
-    <% end %>
-    |
+    <li class="dropdown-wrapper">
+      <a class="dropdown-button" onclick="dropDown()">Shop</p>
+      <ul id='dropdown' class="hidden">
+        <% @taxonomies.first.root.children.each do |taxonomy| %>
+          <%= nav_tree(taxonomy, @taxon, 1) %>
+        <% end %>
+      </ul>
+    </li>
+
 
     <%= render 'spree/shared/login_bar' %>
   </ul>
+  <script>
+    function dropDown() {
+      $(document).trigger('drop')
+    }
+  </script>
 </nav>

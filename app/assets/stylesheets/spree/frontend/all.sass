@@ -51,75 +51,6 @@ html
   font-family: 'Raleway', sans-serif
   background: $b-basic
 
-.top-banner
-  background-image: image-url('pink_sky.jpg')
-  background-position: 60%
-  .banner-overlay
-    box-sizing: border-box
-    padding-top: 70px
-    background-color: rgba(100, 200, 100, 0.4)
-    height: 100%
-    h2,
-    h1
-      text-align: center
-      color: $light-text
-    h1
-      font-size: 3rem
-    h2
-      font-size: 2rem
-      margin-bottom: 110px
-    h3
-      font-size: 1.2rem
-      padding: 0 40px
-    button
-      @include basic-button($fancy-text-col)
-
-#greeting
-  background: $b-garnish
-  padding: 60px 0
-  border-radius: $radius
-  max-width: 800px
-  margin: auto
-  margin-bottom: 60px
-  text-align: center
-  h2
-    color: $b-dark
-    padding-bottom: 20px
-  p
-    font-size: 1.2rem
-    color: $light-text
-
-
-.main-navbar
-  color: $pebbles
-  $light-text-space: nowrap
-  width: 100%
-  border-bottom: 1px solid $pebbles
-  padding: 20px 0 0 0
-  font-size: 1.1em
-  li
-    margin-right: 20px
-    margin-bottom: 10px
-  aside
-    float: right
-    text-align: right
-    div
-      display: inline-block
-      margin-left: 40px
-    .amount
-      font-weight: bolder
-      padding-left: 5px
-      border-left: 1px solid $pebbles
-    .cart-info
-      color: $light-text
-  ul.main
-    $light-text-space: normal
-    margin: 0 0 10px 20px
-  li,
-  ul,
-  aside,
-    display: inline-block
-
 h1
   font-size: 2.4em
   color: $fancy-text-col
@@ -173,6 +104,104 @@ input.button,
 
 #wrapper
   padding-bottom: 200px
+
+.top-banner
+  background-image: image-url('pink_sky.jpg')
+  background-position: 60%
+  .banner-overlay
+    box-sizing: border-box
+    padding-top: 70px
+    background-color: rgba(100, 200, 100, 0.4)
+    height: 100%
+    h2,
+    h1
+      text-align: center
+      color: $light-text
+    h1
+      font-size: 3rem
+    h2
+      font-size: 2rem
+      margin-bottom: 110px
+    h3
+      font-size: 1.2rem
+      padding: 0 40px
+    button
+      @include basic-button($fancy-text-col)
+
+#greeting
+  background: $b-garnish
+  padding: 60px 0
+  border-radius: $radius
+  max-width: 800px
+  margin: auto
+  margin-bottom: 60px
+  text-align: center
+  h2
+    color: $b-dark
+    padding-bottom: 20px
+  p
+    font-size: 1.2rem
+    color: $light-text
+
+
+.main-navbar
+  color: $pebbles
+  $light-text-space: nowrap
+  width: 100%
+  border-bottom: 1px solid $pebbles
+  padding: 20px 0 0 0
+  font-size: 1.1em
+  vertical-align: middle
+  li
+    margin-right: 20px
+    height: 40px
+    &.dropdown-wrapper
+      position: relative
+    .dropdown-button
+      color: $b-dark
+      &.active
+        color: $pebbles
+      &:hover
+        color: $pebbles
+        cursor: pointer
+    #dropdown
+      z-index: 1
+      position: absolute
+      background: $b-garnish
+      top: 100%
+      width: 150px
+      &.hidden
+        display: none
+      li
+        display: flex
+        padding: 10px
+        font-size: 0.9rem
+        align-items: center
+    a
+      vertical-align: middle
+    a.devider
+      //padding-left: 10px
+      //border-left: 1px solid $pebbles
+  aside
+    float: right
+    text-align: right
+    div
+      display: inline-block
+      margin-left: 40px
+    .amount
+      font-weight: bolder
+      padding-left: 5px
+      border-left: 1px solid $pebbles
+    .cart-info
+      color: $light-text
+  ul.main
+    $light-text-space: normal
+    margin: 0 0 0px 20px
+  li,
+  ul,
+  aside,
+    display: inline-block
+
 
 .line_item_quantity,
 #wrapper #quantity
@@ -283,7 +312,6 @@ h1.taxon-title
 
 #product-details
   #wrapper
-    background: $b-garnish
     padding-left: 70px
     padding-right: 70px
     min-height: 600px
