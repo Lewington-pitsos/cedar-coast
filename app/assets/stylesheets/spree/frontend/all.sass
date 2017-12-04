@@ -489,15 +489,17 @@ div.registration-holder,
       border: 1px solid red
 
 #registration
-  padding: 50px 50px 100px 50px
+  padding: 50px 50px 0 50px
   display: flex
+  flex-wrap: wrap
   justify-content: space-evenly
   #account,
   #guest_checkout
-  #account
     @include user-related($b-dark, $b-dark)
   #guest_checkout
-    @include user-related($b-dark, $b-dark)
+    margin: 0 30px
+  #account
+    margin-bottom: 60px
   .back-link
     display: none
 
@@ -929,3 +931,8 @@ $about-margin: 20px
     form.new_spree_user,
     #forgot-password > p
       margin-left: 10px
+  #registration
+    padding: 30px 0 0 10px
+    justify-content: flex-start
+    #guest_checkout
+      margin: 0 0 40px 0
