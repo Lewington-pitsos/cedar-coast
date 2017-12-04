@@ -505,13 +505,15 @@ div.registration-holder,
 
 .progress-steps
   display: flex
+  flex-wrap: wrap
   justify-content: space-between
   margin-bottom: 30px
   li
-    width: 20%
+    flex-grow: 1
+    width: 120px
     @include basic-button($greyed-out)
     text-align: center
-    border-right: 1px solid $light-text
+    border-left: 1px solid $light-text
     padding: 0
     span
       display: block
@@ -538,9 +540,8 @@ div.registration-holder,
       content: '   '
       background: image-url('tick.png')
       background-size: contain
-
-  li:last-child
-    border: none
+  li:first-child
+    border-left: none
 
 legend
   font-size: 1.5rem
@@ -871,10 +872,15 @@ $about-margin: 20px
         padding: 30px 60px
     .end
       padding: 30px 60px
+  .progress-steps
+    li
+      border-top: 1px solid $light-text
 
 
 
 @media only screen and (max-width: 500px)
+  html
+    font-size: 14px
   #footer
     .content-wrapper
       justify-content: flex-start
@@ -936,3 +942,29 @@ $about-margin: 20px
     justify-content: flex-start
     #guest_checkout
       margin: 0 0 40px 0
+  #checkout
+    #checkout-information
+      select,
+      input
+        max-width: 220px
+        margin-bottom: 10px
+  #checkout_form_address
+    margin: 0 20px
+    #shipping,
+    #billing
+      width: 260px
+      padding: 10px
+      margin-bottom: 40px
+      p
+        margin-bottom: 10px
+    #shipping
+      .field.checkbox
+        margin-top: 10px
+    #billing
+      max-width: 402px
+    .columns.omega.six
+      min-height: 100px
+  .progress-steps
+    border-right: 1px solid $light-text
+    li:first-child
+      border-left: 1px solid $light-text
