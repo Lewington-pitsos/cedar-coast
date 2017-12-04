@@ -336,7 +336,6 @@ h1.taxon-title
             border-radius: 5px
     .columns.ten.omega
       margin-left: 600px
-      .column-holder
       #product-price
         font-size: 1.2em
         color: $ftc-lite
@@ -867,6 +866,10 @@ $about-margin: 20px
   border-right: none
 
 @media only screen and (max-width: 850px)
+  #product-details
+    #wrapper
+      padding-left: 0
+      padding-right: 0
   #greeting
     max-width: 85%
     padding: 30px 20px
@@ -908,8 +911,6 @@ $about-margin: 20px
       .overlay
         h2
           padding-top: 50px
-
-
   #checkout_form_confirm
     #order_details
       td[data-hook="order_item_image"]
@@ -917,6 +918,19 @@ $about-margin: 20px
         padding: 0
         img
           display: none
+  #product-details
+    #wrapper
+      #breadcrumbs
+        max-width: 400px
+        margin: auto
+        margin-bottom: 20px
+      [data-hook="product_show"]
+        #main-image
+          img
+            max-width: 400px
+        .columns.ten.omega
+          max-width: 400px
+          margin: auto
 
 @media only screen and (max-width: 500px)
   html
@@ -1015,3 +1029,16 @@ $about-margin: 20px
       td[data-hook="order_item_description"]
         p
           display: none
+  #product-details
+    #wrapper
+      #breadcrumbs
+        max-width: 280px
+      [data-hook="product_show"]
+        #main-image
+          width: 280
+          img
+            height: 280px
+            width: 280px
+        div.columns.ten.omega
+          max-width: 280px
+          margin-bottom: 40px
