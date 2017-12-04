@@ -384,31 +384,26 @@ h1.taxon-title
   .clear
     clear: both
 
-
-
-
 body#cart
   #content
     @include step-box(900px)
     margin-top: 40px
-
-h1.cart
-  text-align: center
-  margin-bottom: 100px
-
-#cart-detail
-  width: 100%
-  tr
-    border-bottom: 1px solid $b-garnish
-    td,
-    th
-      padding: 10px
-    td
-      vertical-align: middle
-    .cart-item-description
-      width: 290px
-  .cart-total
-    border-bottom: none
+  h1.cart
+    text-align: center
+    margin-bottom: 100px
+  #cart-detail
+    width: 100%
+    tr
+      border-bottom: 1px solid $b-garnish
+      td,
+      th
+        padding: 10px
+      td
+        vertical-align: middle
+      .cart-item-description
+        width: 290px
+    .cart-total
+      border-bottom: none
 
 .links.columns.sixteen.alpha.omega
   margin-top: 40px
@@ -898,6 +893,9 @@ $about-margin: 20px
         flex-wrap: wrap
         .columns
           padding-bottom: 30px
+  body#cart
+    #content
+      padding: 20px
 
 @media only screen and (max-width: 640px)
   .top-banner
@@ -931,6 +929,17 @@ $about-margin: 20px
         .columns.ten.omega
           max-width: 400px
           margin: auto
+  body#cart
+    #content
+      border-right: none
+      border-left: none
+      .cart-item-image
+        padding: 0
+        img
+          display: none
+      .cart-item-quantity
+        input
+          width: 50px
 
 @media only screen and (max-width: 500px)
   html
@@ -1042,3 +1051,12 @@ $about-margin: 20px
         div.columns.ten.omega
           max-width: 280px
           margin-bottom: 40px
+  body#cart
+    #content
+      padding: 20px 0
+      .cart-item-quantity
+        input
+          width: 30px
+      .cart-item-description
+        a
+          font-size: 1rem
