@@ -153,8 +153,6 @@ span.required
   border-bottom: 1px solid $pebbles
   padding: 20px 0 0 0
   font-size: 1.1em
-  .main
-    width: 800px
   li
     margin-right: 20px
     height: 40px
@@ -251,7 +249,7 @@ h3.home
       background-color: rgba(121,	78,	40, 0.6)
       color: $highlight
       h2
-        width: 400px
+        max-width: 400px
         margin: auto
         font-weight: bold
         padding-top: 130px
@@ -264,23 +262,21 @@ h3.home
 [data-hook="taxon_products"]
   #products
     justify-content: flex-start
-    li
-      max-width: 240px
-      .product-image
 
 #products
   display: flex
   margin: auto
   flex-wrap: wrap
-  justify-content: space-between
+  justify-content: space-around
   margin-top: 30px
   li
+    max-width: 240px
     border-radius: $radius
     background: $b-garnish
     flex-grow: 1
     display: flex
-    justify-content: center
-    align-items: center
+    justify-content: space-between
+    align-items: space
     flex-direction: column
     margin: 0 25px 40px 25px
     .product-image
@@ -288,9 +284,10 @@ h3.home
       margin-bottom: 5px
       img
         width: 100% !important
-
-    a
+    a.info
       text-align: center
+      display: block
+      margin: 0 10px
     .price-holder
       text-align: center
       margin-top: 15px
@@ -364,6 +361,7 @@ h1.taxon-title
     .sustainability,
     .contact
       color: $light-text
+      margin: 0 30px
       h6
         font-size: 1.3rem
         padding-bottom: 30px
@@ -858,3 +856,19 @@ $about-margin: 20px
           width: 45%
         .higher
           margin-right: $about-margin
+
+@media only screen and (max-width: 850px)
+  #greeting
+    max-width: 85%
+    padding: 30px 20px
+
+
+@media only screen and (max-width: 500px)
+  #footer
+    .content-wrapper
+      justify-content: flex-start
+  #products
+    li
+      max-width: 160px
+  #wrapper
+    padding-bottom: 0
