@@ -862,6 +862,10 @@ $about-margin: 20px
         .higher
           margin-right: $about-margin
 
+@mixin small-step-box
+  border-left: none
+  border-right: none
+
 @media only screen and (max-width: 850px)
   #greeting
     max-width: 85%
@@ -875,6 +879,18 @@ $about-margin: 20px
   .progress-steps
     li
       border-top: 1px solid $light-text
+  #checkout
+    margin-top: 0
+  #checkout_form_delivery
+    #shipping_method
+      @include small-step-box
+  #checkout_form_payment
+    #payment
+      @include small-step-box
+  #checkout_form_confirm
+    #order_details
+      @include small-step-box
+      .row.steps-data
 
 
 
@@ -960,11 +976,13 @@ $about-margin: 20px
     #shipping
       .field.checkbox
         margin-top: 10px
-    #billing
-      max-width: 402px
     .columns.omega.six
       min-height: 100px
   .progress-steps
     border-right: 1px solid $light-text
     li:first-child
       border-left: 1px solid $light-text
+  #checkout_form_delivery
+    #shipping_method
+      padding: 30px 10px
+      border: none
