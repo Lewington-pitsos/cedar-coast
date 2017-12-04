@@ -788,6 +788,7 @@ $about-margin: 20px
 
 
 @mixin flash-message($main, $garnish, $text)
+    box-sizing: border-box
     width: 100%
     margin: auto
     padding: 15px
@@ -909,3 +910,22 @@ $about-margin: 20px
     dl
       dd
         margin-left: 10px
+  #errorExplanation,
+  .flash.errors,
+  .flash.error,
+  .flash.notice,
+  .flash.success,
+    border: none
+  #content > .login-holder
+    max-width: 100%
+    margin: 0
+    #existing-customer,
+    #new-customer,
+    #forgot-password
+      width: 100%
+      margin-top: 0
+    [data-hook="login"],
+    [data-hook="signup"],
+    form.new_spree_user,
+    #forgot-password > p
+      margin-left: 10px
