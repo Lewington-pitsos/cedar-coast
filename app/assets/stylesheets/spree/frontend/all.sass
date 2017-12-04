@@ -890,9 +890,20 @@ $about-margin: 20px
   #checkout_form_confirm
     #order_details
       @include small-step-box
+      padding: 20px 10px
       .row.steps-data
+        flex-wrap: wrap
+        .columns
+          padding-bottom: 30px
 
-
+@media only screen and (max-width: 640px)
+  #checkout_form_confirm
+    #order_details
+      td[data-hook="order_item_image"]
+        width: 0
+        padding: 0
+        img
+          display: none
 
 @media only screen and (max-width: 500px)
   html
@@ -986,3 +997,8 @@ $about-margin: 20px
     #shipping_method
       padding: 30px 10px
       border: none
+  #checkout_form_confirm
+    #order_details
+      td[data-hook="order_item_description"]
+        p
+          display: none
