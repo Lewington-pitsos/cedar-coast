@@ -22,3 +22,5 @@
 
 .byebug_history
 /app/assets/images/*
+config/database.yml\nconfig/secrets.yml
+config/database.yml\nconfig/secrets.yml
