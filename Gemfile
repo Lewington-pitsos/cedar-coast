@@ -10,7 +10,7 @@ gem 'capistrano', '~> 3.8', '>= 3.7.1'
 gem 'capistrano-rails', '~> 1.3'
 gem 'capistrano-passenger'
 gem 'capistrano-rbenv', '~> 2.1'
-gem 'pg'
+gem 'pg', '~> 0.18.4'
 
 
 gem 'pry'
