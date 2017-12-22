@@ -1,6 +1,5 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.10.1"
-
 set :application, "cedar_coast"
 set :repo_url, "https://github.com/Lewington-pitsos/cedar-coast"
 
