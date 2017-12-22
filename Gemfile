@@ -5,6 +5,12 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+# deployment related
+gem 'capistrano', '~> 3.8', '>= 3.7.1'
+gem 'capistrano-rails', '~> 1.3'
+gem 'capistrano-passenger'
+gem 'capistrano-rbenv', '~> 2.1'
+
 gem 'pry'
 gem 'carrierwave', '~> 1.0'
 gem 'solidus'
