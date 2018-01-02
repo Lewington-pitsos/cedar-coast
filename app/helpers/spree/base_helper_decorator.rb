@@ -54,6 +54,7 @@ module Spree::BaseHelper
     def generate_body_id
       # sets the id of the body element to a unique string if @product is truthy
       if @product
+        @body_id = 'product-details'
         'product-details'
       else
         'default'
