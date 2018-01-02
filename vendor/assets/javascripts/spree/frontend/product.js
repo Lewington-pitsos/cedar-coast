@@ -26,12 +26,15 @@ Spree.ready(function($) {
       return false;
     });
     thumbnails.find("li").on("mouseenter", function(event) {
+      var mainHeight = $("#main-image img").height()
+      console.log(mainHeight);
       $("#main-image img").attr(
         "src",
         $(event.currentTarget)
           .find("a")
           .attr("href")
       );
+      $("#main-image img").height(mainHeight);
     });
     thumbnails.find("li").on("mouseleave", function(event) {
       $("#main-image img").attr("src", $("#main-image").data("selectedThumb"));
