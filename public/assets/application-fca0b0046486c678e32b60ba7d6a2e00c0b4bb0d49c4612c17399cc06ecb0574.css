@@ -1,0 +1,1802 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/reset.css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 27, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/reset.css */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/reset.css */
+body {
+  line-height: 1;
+}
+
+/* line 34, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/reset.css */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/reset.css */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 40, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/reset.css */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 45, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/reset.css */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 50, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.hidden {
+  display: none;
+}
+
+/* line 53, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+html {
+  font-family: "Raleway", sans-serif;
+  background: #E5D0AC;
+}
+
+/* line 57, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+h1 {
+  font-size: 2.4em;
+  color: #794E28;
+  font-weight: bold;
+}
+
+/* line 62, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+h2 {
+  font-size: 2rem;
+}
+
+/* line 65, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+h3 {
+  font-size: 1.5rem;
+  color: #794E28;
+  font-weight: bold;
+}
+
+/* line 70, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* line 74, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+p,
+tbody {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+/* line 79, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+a {
+  text-decoration: none;
+  color: #794E28;
+}
+/* line 82, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+a:hover, a.cart-info:hover {
+  color: #5F6573;
+}
+
+/* line 86, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+img {
+  border-radius: 4px;
+}
+
+/* line 91, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+input,
+select {
+  background: #F2EFE4;
+}
+
+/* line 95, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+button.primary,
+input.button,
+.continue.button,
+.cart-button {
+  cursor: pointer;
+  border: none;
+  color: #F2EFE4;
+  background: #794E28;
+  padding: 10px;
+  margin-top: 15px;
+}
+/* line 101, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+button.primary:hover,
+input.button:hover,
+.continue.button:hover,
+.cart-button:hover {
+  background: #572C06;
+}
+
+/* line 104, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+span.required {
+  color: red;
+}
+
+/* line 107, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.button {
+  padding: 10px;
+}
+
+/* line 110, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#wrapper {
+  padding-bottom: 200px;
+}
+
+/* line 113, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.top-banner {
+  background-image: url(/assets/pink_sky-41ee9156690c95a62c3fc37a8863f6edccf2af01f45555ae910686ac9f1fb34a.jpg);
+  background-position: 60%;
+}
+/* line 116, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.top-banner .banner-overlay {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 70px;
+  background-color: rgba(100, 200, 100, 0.4);
+  height: 100%;
+}
+/* line 121, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.top-banner .banner-overlay h2,
+.top-banner .banner-overlay h1 {
+  text-align: center;
+  color: #F2EFE4;
+}
+/* line 125, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.top-banner .banner-overlay h1 {
+  font-size: 3rem;
+}
+/* line 127, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.top-banner .banner-overlay h2 {
+  font-size: 2rem;
+  margin-bottom: 110px;
+}
+/* line 130, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.top-banner .banner-overlay h3 {
+  font-size: 1.2rem;
+  padding: 0 40px;
+}
+/* line 133, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.top-banner .banner-overlay button {
+  cursor: pointer;
+  border: none;
+  color: #F2EFE4;
+  background: #794E28;
+  padding: 10px;
+}
+
+/* line 136, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#greeting {
+  background: #D2B58B;
+  padding: 60px 0;
+  border-radius: 4px;
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 60px;
+  text-align: center;
+}
+/* line 144, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#greeting h2 {
+  color: #794E28;
+  padding-bottom: 20px;
+}
+/* line 147, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#greeting p {
+  font-size: 1.2rem;
+  color: #F2EFE4;
+}
+
+/* line 152, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.main-navbar {
+  color: #5F6573;
+  width: 100%;
+  border-bottom: 1px solid #5F6573;
+  padding: 20px 0 0 0;
+  font-size: 1.1em;
+}
+/* line 159, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.main-navbar li {
+  margin-right: 20px;
+  height: 40px;
+}
+/* line 162, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.main-navbar li.dropdown-wrapper {
+  position: relative;
+}
+/* line 164, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.main-navbar li .dropdown-button {
+  color: #794E28;
+}
+/* line 166, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.main-navbar li .dropdown-button.active {
+  color: #5F6573;
+}
+/* line 168, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.main-navbar li .dropdown-button:hover {
+  color: #5F6573;
+  cursor: pointer;
+}
+/* line 171, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.main-navbar li #dropdown {
+  z-index: 1;
+  position: absolute;
+  background: #D2B58B;
+  top: 100%;
+  border-top: 1px solid #5F6573;
+  width: 130px;
+}
+/* line 178, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.main-navbar li #dropdown.hidden {
+  display: none;
+}
+/* line 180, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.main-navbar li #dropdown li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 8px;
+  font-size: 0.9rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/* line 185, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.main-navbar li a {
+  vertical-align: middle;
+}
+/* line 187, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.main-navbar li a.devider {
+  padding-left: 10px;
+  border-left: 1px solid #5F6573;
+}
+/* line 190, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.main-navbar aside {
+  float: right;
+  text-align: right;
+}
+/* line 193, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.main-navbar aside div {
+  display: inline-block;
+  margin-left: 40px;
+}
+/* line 196, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.main-navbar aside .amount {
+  font-weight: bolder;
+  padding-left: 5px;
+  border-left: 1px solid #5F6573;
+}
+/* line 200, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.main-navbar aside .cart-info {
+  color: #F2EFE4;
+}
+/* line 202, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.main-navbar ul.main {
+  margin: 0 0 0px 20px;
+}
+/* line 205, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.main-navbar li,
+.main-navbar ul,
+.main-navbar aside {
+  display: inline-block;
+}
+
+/* line 211, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.line_item_quantity,
+#wrapper #quantity {
+  padding: 10px 5px;
+  border-radius: 0;
+  border: none;
+  border-left: 1px solid #dedede;
+  border-top: 1.5px solid #ccc;
+  background: #F2EFE4;
+}
+
+/* line 220, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+h3.home {
+  font-size: 2rem;
+  color: #794E28;
+  text-align: center;
+  padding: 20px;
+  margin: 0 25px;
+  border-bottom: 1px solid #794E28;
+}
+
+/* line 229, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+[data-hook="homepage_products"] #welcome-wrapper {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 70px;
+  position: relative;
+}
+/* line 234, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+[data-hook="homepage_products"] #welcome-wrapper .welcome-banner,
+[data-hook="homepage_products"] #welcome-wrapper .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/* line 241, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+[data-hook="homepage_products"] #welcome-wrapper .welcome-banner {
+  display: none;
+  background-size: cover;
+  background-position: center;
+}
+/* line 245, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+[data-hook="homepage_products"] #welcome-wrapper .one {
+  display: block;
+  background-image: url(/assets/rails-6c96c8d3b1e4671821156fd73ebf97e07dc72c43786cd6308643a3100d668d17.jpg);
+}
+/* line 248, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+[data-hook="homepage_products"] #welcome-wrapper .two {
+  background-image: url(/assets/oaks-91cd2c976c23d984820b6858e0fad9e871d33f81b7c2dd2393bc85a8b32698a3.jpg);
+}
+/* line 250, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+[data-hook="homepage_products"] #welcome-wrapper .overlay {
+  text-align: center;
+  background-color: rgba(121, 78, 40, 0.6);
+  color: #DDB853;
+}
+/* line 254, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+[data-hook="homepage_products"] #welcome-wrapper .overlay h2 {
+  max-width: 400px;
+  margin: auto;
+  font-weight: bold;
+  padding-top: 130px;
+  font-size: 2.8rem;
+}
+/* line 260, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+[data-hook="homepage_products"] #welcome-wrapper .overlay p {
+  font-size: 1.8rem;
+}
+/* line 262, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+[data-hook="homepage_products"] .taxon {
+  margin-bottom: 60px;
+}
+
+/* line 266, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+[data-hook="taxon_products"] #products {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 269, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 30px;
+}
+/* line 275, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#products li {
+  max-width: 240px;
+  border-radius: 4px;
+  background: #D2B58B;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: space;
+      -ms-flex-align: space;
+          align-items: space;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 25px 40px 25px;
+}
+/* line 285, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#products li .product-image {
+  width: 100%;
+  margin-bottom: 5px;
+}
+/* line 288, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#products li .product-image img {
+  width: 100% !important;
+}
+/* line 290, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#products li a.info {
+  text-align: center;
+  display: block;
+  margin: 0 10px;
+}
+/* line 294, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#products li .price-holder {
+  text-align: center;
+  margin-top: 15px;
+}
+/* line 297, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#products li #quantity {
+  display: none;
+}
+/* line 299, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#products li #cart-form {
+  width: 100%;
+}
+/* line 301, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#products li #cart-form #add-to-cart-button {
+  width: 100%;
+  border-radius: 0 0 4px 4px;
+}
+
+/* line 306, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#breadcrumbs {
+  max-width: 100%;
+  padding-top: 40px;
+  margin-left: 30px;
+  margin-bottom: 40px;
+}
+/* line 311, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#breadcrumbs li {
+  display: inline-block;
+}
+
+/* line 314, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+h1.taxon-title {
+  text-align: center;
+}
+
+/* line 318, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#product-details #wrapper {
+  padding-left: 70px;
+  padding-right: 70px;
+  min-height: 600px;
+}
+/* line 322, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#product-details #wrapper #breadcrumbs {
+  margin-left: 0px;
+}
+/* line 325, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#product-details #wrapper #content.columns.sixteen h1 {
+  margin-bottom: 60px;
+}
+/* line 327, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#product-details #wrapper .columns.six.alpha {
+  margin-right: 80px;
+  margin-bottom: 60px;
+  float: left;
+}
+/* line 331, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#product-details #wrapper .columns.six.alpha .tmb-all.tmb-1 {
+  display: inline-block;
+  margin: 20px 0 0 20px;
+}
+/* line 335, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#product-details #wrapper .columns.six.alpha #product-thumbnails li {
+  margin: 15px 40px 0 0;
+  display: inline-block;
+}
+/* line 338, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#product-details #wrapper .columns.six.alpha #product-thumbnails li img {
+  border-radius: 5px;
+}
+/* line 340, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#product-details #wrapper .columns.ten.omega {
+  margin-left: 600px;
+}
+/* line 342, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#product-details #wrapper .columns.ten.omega #product-price {
+  font-size: 1.2em;
+  color: #9b6f4a;
+  margin-bottom: 20px;
+}
+/* line 346, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#product-details #wrapper .columns.ten.omega [itemprop="description"] {
+  margin-bottom: 20px;
+}
+/* line 348, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#product-details #wrapper .columns.ten.omega #inside-product-cart-form {
+  margin-top: 20px;
+}
+/* line 350, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#product-details #wrapper .columns.ten.omega td {
+  padding-right: 20px;
+}
+
+/* line 354, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#footer {
+  clear: both;
+  background: #794E28;
+  padding-bottom: 20px;
+}
+/* line 358, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#footer .content-wrapper {
+  padding-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+/* line 363, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#footer .content-wrapper .sustainability,
+#footer .content-wrapper .contact {
+  color: #F2EFE4;
+  margin: 0 30px;
+}
+/* line 367, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#footer .content-wrapper .sustainability h6,
+#footer .content-wrapper .contact h6 {
+  font-size: 1.3rem;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #F2EFE4;
+}
+/* line 371, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#footer .content-wrapper .sustainability ul,
+#footer .content-wrapper .contact ul {
+  margin-top: 20px;
+  margin-bottom: 70px;
+}
+/* line 374, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#footer .content-wrapper .sustainability ul li,
+#footer .content-wrapper .contact ul li {
+  font-size: 1rem;
+  padding: 10px;
+}
+/* line 377, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#footer #page-top {
+  float: right;
+  display: inline-block;
+  background: #5F6573;
+  color: #F2EFE4;
+  padding: 20px;
+  padding-right: 40px;
+  text-align: right;
+}
+/* line 385, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#footer #page-top:hover {
+  background: #4c505c;
+}
+/* line 387, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#footer .clear {
+  clear: both;
+}
+
+/* line 391, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+body#cart #content {
+  max-width: 900px;
+  margin: auto;
+  padding: 60px;
+  border: 1px solid #D2B58B;
+  margin-top: 40px;
+}
+/* line 394, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+body#cart h1.cart {
+  text-align: center;
+  margin-bottom: 100px;
+}
+/* line 397, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+body#cart #cart-detail {
+  width: 100%;
+}
+/* line 399, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+body#cart #cart-detail tr {
+  border-bottom: 1px solid #D2B58B;
+}
+/* line 401, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+body#cart #cart-detail tr td,
+body#cart #cart-detail tr th {
+  padding: 10px;
+}
+/* line 404, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+body#cart #cart-detail tr td {
+  vertical-align: middle;
+}
+/* line 406, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+body#cart #cart-detail tr .cart-item-description {
+  width: 290px;
+}
+/* line 408, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+body#cart #cart-detail .cart-total {
+  border-bottom: none;
+}
+
+/* line 411, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.links.columns.sixteen.alpha.omega {
+  margin-top: 40px;
+}
+/* line 413, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.links.columns.sixteen.alpha.omega #update-button {
+  float: right;
+  margin-right: 60px;
+}
+/* line 416, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.links.columns.sixteen.alpha.omega input {
+  background: #F2EFE4;
+  border: 1px solid #D2B58B;
+  padding: 10px;
+}
+
+/* line 421, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#empty-cart {
+  margin-top: 120px;
+}
+
+/* line 425, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.empty-cart-warning p {
+  margin-bottom: 30px;
+}
+
+/* line 451, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+div.registration-holder,
+#checkout {
+  max-width: 1100px;
+  margin: auto;
+  margin-top: 60px;
+}
+/* line 456, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+div.registration-holder h1,
+#checkout h1 {
+  text-align: center;
+}
+/* line 458, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+div.registration-holder #checkout-information,
+#checkout #checkout-information {
+  border: 1px solid #D2B58B;
+}
+/* line 460, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+div.registration-holder #checkout-information h1,
+#checkout #checkout-information h1 {
+  text-align: center;
+  border-bottom: 1px solid #D2B58B;
+  padding: 20px;
+  background: #D2B58B;
+}
+/* line 465, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+div.registration-holder #checkout-information input,
+div.registration-holder #checkout-information select,
+#checkout #checkout-information input,
+#checkout #checkout-information select {
+  margin-bottom: 20px;
+  border-radius: 0;
+  border: 1px solid #D2B58B;
+  padding: 10px;
+}
+/* line 471, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+div.registration-holder #checkout-information select,
+#checkout #checkout-information select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-image: url(/assets/select_arrows-44e9adc578b6ceff3313781699599b10a9cc0f189edd8543d42a821e95734746.png);
+  background-position: 99% center;
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+}
+/* line 478, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+div.registration-holder #checkout-information form,
+#checkout #checkout-information form {
+  margin-bottom: 60px;
+}
+/* line 485, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+div.registration-holder #checkout-information .unfilled,
+#checkout #checkout-information .unfilled {
+  border: 1px solid red;
+}
+
+/* line 488, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#registration {
+  padding: 50px 50px 0 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+/* line 430, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#registration #account h6,
+#registration #guest_checkout h6 {
+  border-bottom: 1px solid #794E28;
+  background: #794E28;
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: #F2EFE4;
+}
+/* line 438, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#registration #account input,
+#registration #account select,
+#registration #guest_checkout input,
+#registration #guest_checkout select {
+  margin-bottom: 20px;
+  border-radius: 0;
+  border: 1px solid #D2B58B;
+  padding: 10px;
+}
+/* line 496, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#registration #guest_checkout {
+  margin: 0 30px;
+}
+/* line 498, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#registration #account {
+  margin-bottom: 60px;
+}
+/* line 500, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#registration .back-link {
+  display: none;
+}
+
+/* line 503, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.progress-steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+/* line 508, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.progress-steps li {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 120px;
+  cursor: pointer;
+  border: none;
+  color: #F2EFE4;
+  background: #777;
+  padding: 10px;
+  text-align: center;
+  border-left: 1px solid #F2EFE4;
+  padding: 0;
+}
+/* line 515, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.progress-steps li span {
+  display: block;
+  padding: 20px 10px;
+}
+/* line 518, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.progress-steps li.current-first,
+.progress-steps li.current {
+  background: #9b6f4a;
+}
+/* line 521, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.progress-steps li.completed-first,
+.progress-steps li.completed {
+  background: #794E28;
+}
+/* line 524, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.progress-steps li.completed-first:hover,
+.progress-steps li.completed:hover {
+  background: #572C06;
+}
+/* line 526, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.progress-steps li.completed-first span,
+.progress-steps li.completed span {
+  padding: 0;
+}
+/* line 528, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.progress-steps li.completed-first a,
+.progress-steps li.completed a {
+  color: #F2EFE4;
+  display: block;
+  padding: 20px 10px;
+}
+/* line 532, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.progress-steps li.completed-first a::after,
+.progress-steps li.completed a::after {
+  display: inline-block;
+  margin-left: 5px;
+  width: 10px;
+  height: 10px;
+  content: "   ";
+  background: url(/assets/tick-d66eede237e198cf9d635829da4c06826c590cffd14e1ac7b9345a49187651a6.png);
+  background-size: contain;
+}
+/* line 540, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.progress-steps li:first-child {
+  border-left: none;
+}
+
+/* line 543, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+legend {
+  font-size: 1.5rem;
+  color: #794E28;
+  text-align: left;
+  padding: 0 8px;
+}
+
+/* line 549, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#content > .login-holder {
+  max-width: 400px;
+  margin: auto;
+}
+/* line 552, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#content > .login-holder #forgot-password,
+#content > .login-holder #new-customer,
+#content > .login-holder #existing-customer {
+  padding-bottom: 30px;
+  margin: 70px 0 40px 0;
+  border-bottom: 1px solid #794E28;
+}
+/* line 430, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#content > .login-holder #forgot-password h6,
+#content > .login-holder #new-customer h6,
+#content > .login-holder #existing-customer h6 {
+  border-bottom: 1px solid #794E28;
+  background: #794E28;
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: #F2EFE4;
+}
+/* line 438, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#content > .login-holder #forgot-password input,
+#content > .login-holder #forgot-password select,
+#content > .login-holder #new-customer input,
+#content > .login-holder #new-customer select,
+#content > .login-holder #existing-customer input,
+#content > .login-holder #existing-customer select {
+  margin-bottom: 20px;
+  border-radius: 0;
+  border: 1px solid #D2B58B;
+  padding: 10px;
+}
+/* line 556, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#content > .login-holder #forgot-password > p {
+  margin-bottom: 15px;
+}
+
+/* line 559, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#checkout_form_address {
+  margin: 0 60px;
+}
+/* line 561, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#checkout_form_address p.field {
+  margin-bottom: 30px;
+}
+/* line 563, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#checkout_form_address legend {
+  float: left;
+}
+/* line 565, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#checkout_form_address #shipping,
+#checkout_form_address #billing {
+  border: 1px solid #D2B58B;
+  width: 340px;
+  padding: 30px;
+  margin-bottom: 70px;
+}
+/* line 571, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#checkout_form_address #shipping p,
+#checkout_form_address #billing p {
+  margin-bottom: 30px;
+}
+/* line 574, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#checkout_form_address #shipping .field.checkbox {
+  margin-left: 110px;
+  font-size: 0.7rem;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+/* line 579, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#checkout_form_address #shipping .field.checkbox #use_billing {
+  vertical-align: 4px;
+}
+/* line 581, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#checkout_form_address #billing {
+  float: left;
+  margin-right: 80px;
+}
+/* line 584, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#checkout_form_address #billing .inner {
+  padding-top: 90px;
+}
+/* line 586, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#checkout_form_address hr.clear {
+  visibility: hidden;
+}
+/* line 588, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#checkout_form_address .columns.omega.six {
+  min-height: 1242px;
+}
+
+/* line 600, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#checkout_form_delivery #shipping_method {
+  max-width: 700px;
+  margin: auto;
+  padding: 60px;
+  border: 1px solid #D2B58B;
+}
+/* line 602, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#checkout_form_delivery #shipping_method h5,
+#checkout_form_delivery #shipping_method h3 {
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #794E28;
+  color: #F2EFE4;
+  padding: 15px;
+  border-bottom: 1px solid #F2EFE4;
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+/* line 607, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#checkout_form_delivery #shipping_method table {
+  margin-bottom: 60px;
+  width: 100%;
+}
+/* line 610, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#checkout_form_delivery #shipping_method table th,
+#checkout_form_delivery #shipping_method table td {
+  padding: 10px;
+}
+/* line 613, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#checkout_form_delivery #shipping_method table th {
+  background: #D2B58B;
+}
+/* line 615, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#checkout_form_delivery #shipping_method table td {
+  border-bottom: 1px solid #D2B58B;
+  vertical-align: middle;
+}
+/* line 618, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#checkout_form_delivery #shipping_method ul {
+  margin-top: 20px;
+}
+/* line 620, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#checkout_form_delivery #shipping_method ul li {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #D2B58B;
+}
+/* line 623, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#checkout_form_delivery div.form-buttons {
+  max-width: 822px;
+  margin: auto;
+}
+
+/* line 628, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#checkout_form_payment #payment {
+  max-width: 700px;
+  margin: auto;
+  padding: 60px;
+  border: 1px solid #D2B58B;
+}
+/* line 630, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#checkout_form_payment div.form-buttons {
+  max-width: 822px;
+  margin: auto;
+}
+/* line 633, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#checkout_form_payment p {
+  margin-bottom: 20px;
+}
+
+/* line 637, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#checkout_form_confirm #order_details {
+  max-width: 870px;
+  margin: auto;
+  padding: 60px;
+  border: 1px solid #D2B58B;
+}
+/* line 639, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#checkout_form_confirm #order_details .row.steps-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 40px;
+}
+/* line 642, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#checkout_form_confirm #order_details .row.steps-data .columns.omega.four,
+#checkout_form_confirm #order_details .row.steps-data .columns.alpha.four {
+  font-size: 0.8rem;
+  margin: 0 8px;
+}
+/* line 646, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#checkout_form_confirm #order_details .row.steps-data .columns.omega.four h6,
+#checkout_form_confirm #order_details .row.steps-data .columns.alpha.four h6 {
+  font-weight: bold;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #D2B58B;
+  margin-bottom: 10px;
+}
+/* line 652, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#checkout_form_confirm #order_details .row.steps-data .columns.omega.four div br,
+#checkout_form_confirm #order_details .row.steps-data .columns.alpha.four div br {
+  margin: 3px 0;
+}
+/* line 654, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#checkout_form_confirm #order_details .row.steps-data .columns.omega.four div div,
+#checkout_form_confirm #order_details .row.steps-data .columns.alpha.four div div {
+  margin: 6px 0;
+}
+/* line 656, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#checkout_form_confirm hr {
+  visibility: displayden;
+}
+/* line 659, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#checkout_form_confirm table th {
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #794E28;
+  color: #F2EFE4;
+  padding: 15px;
+  border-bottom: 1px solid #F2EFE4;
+}
+/* line 661, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#checkout_form_confirm table th,
+#checkout_form_confirm table td {
+  vertical-align: middle;
+  padding: 10px;
+}
+/* line 665, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#checkout_form_confirm table th h4,
+#checkout_form_confirm table td h4 {
+  color: #794E28;
+  font-weight: bold;
+}
+/* line 669, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#checkout_form_confirm table tbody tr {
+  border-bottom: 1px solid #D2B58B;
+}
+/* line 672, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#checkout_form_confirm table tfoot td {
+  text-align: right;
+}
+/* line 674, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#checkout_form_confirm table tfoot#subtotal,
+#checkout_form_confirm table tfoot#order-total {
+  font-size: 1.3rem;
+}
+/* line 677, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#checkout_form_confirm table tfoot#subtotal b,
+#checkout_form_confirm table tfoot#order-total b {
+  font-weight: 400;
+}
+/* line 679, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#checkout_form_confirm table tfoot#tax-adjustments,
+#checkout_form_confirm table tfoot#shipment-total {
+  color: #666;
+  font-size: 1rem;
+}
+/* line 683, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#checkout_form_confirm div.form-buttons {
+  max-width: 992px;
+  margin: auto;
+}
+
+/* line 687, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#checkout-summary {
+  max-width: 980px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 100px;
+}
+/* line 692, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#checkout-summary h3 {
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #794E28;
+  color: #F2EFE4;
+  padding: 15px;
+  border-bottom: 1px solid #F2EFE4;
+  font-size: 1.2rem;
+}
+/* line 695, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#checkout-summary table {
+  width: 100%;
+}
+/* line 697, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#checkout-summary table tr {
+  border-bottom: 1px solid #F2EFE4;
+}
+/* line 699, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#checkout-summary table td {
+  text-align: right;
+  border-bottom: 1px solid #D2B58B;
+  padding: 10px;
+  width: 50%;
+}
+
+/* line 705, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.user-info {
+  border-left: 1px solid #D2B58B;
+  padding-left: 30px;
+  margin-top: 40px;
+  margin-left: 100px;
+}
+/* line 430, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.user-info h6 {
+  border-bottom: 1px solid #794E28;
+  background: #794E28;
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: #F2EFE4;
+}
+/* line 438, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.user-info input,
+.user-info select {
+  margin-bottom: 20px;
+  border-radius: 0;
+  border: 1px solid #D2B58B;
+  padding: 10px;
+}
+/* line 711, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.user-info h1 {
+  margin-bottom: 40px;
+}
+/* line 713, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.user-info dl {
+  margin-bottom: 70px;
+  max-width: 400px;
+}
+/* line 716, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.user-info dl dt,
+.user-info dl dd {
+  display: inline-block;
+}
+/* line 719, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.user-info dl dd {
+  margin-left: 30px;
+}
+/* line 721, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.user-info dl dt {
+  font-weight: bold;
+}
+/* line 724, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.user-info .account-my-orders h3 {
+  margin-bottom: 20px;
+}
+
+/* line 733, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.about-wrapper {
+  max-width: 90%;
+  margin: auto;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #794E28;
+}
+/* line 738, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.about-wrapper h1 {
+  text-align: center;
+  margin: 40px 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #794E28;
+}
+/* line 743, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.about-wrapper .banner {
+  width: 100%;
+  height: 400px;
+  background: url(/assets/full_waterfall-092609eb8208a94f4e075b4fe984ff1718375309fffb7689946e4e563eb2e3bd.JPG);
+  background-size: cover;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+/* line 749, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.about-wrapper .substantive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/* line 753, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.about-wrapper .substantive .text-holder {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  background-size: cover;
+  border-radius: 4px;
+  padding: 50px 100px;
+  width: 501px;
+  background: #D2B58B;
+  text-align: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/* line 762, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.about-wrapper .substantive .images {
+  margin-left: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+/* line 769, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.about-wrapper .substantive .images .higher {
+  background: url(/assets/IMG_1998-463fd4ad26a7ade3d35ae2dca133aecddfa62e0655976911400170a8073d71d6.jpg);
+}
+/* line 771, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.about-wrapper .substantive .images .lower {
+  background: url(/assets/full_waterfall-092609eb8208a94f4e075b4fe984ff1718375309fffb7689946e4e563eb2e3bd.JPG);
+}
+/* line 773, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.about-wrapper .substantive .images .higher,
+.about-wrapper .substantive .images .lower {
+  background-size: cover;
+  border-radius: 4px;
+  width: 100%;
+  height: 47.5%;
+}
+/* line 778, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.about-wrapper .end {
+  margin-top: 20px;
+  padding: 50px 100px;
+  background: #794E28;
+  color: #F2EFE4;
+  background-size: cover;
+  border-radius: 4px;
+}
+/* line 784, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.about-wrapper .end h4 {
+  margin-bottom: 20px;
+}
+
+/* line 800, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#errorExplanation,
+.flash.errors {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  margin: auto;
+  padding: 15px;
+  background: lightsalmon;
+  color: #AD0008;
+  border-left: 8px solid darksalmon;
+  text-align: center;
+}
+
+/* line 804, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#errorExplanation {
+  margin-bottom: 60px;
+  padding-left: 20px;
+  text-align: left;
+}
+/* line 808, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#errorExplanation h2 {
+  display: none;
+}
+/* line 810, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#errorExplanation ul {
+  margin-left: 20px;
+  margin-top: 10px;
+  font-size: 0.7rem;
+  list-style-type: disc;
+}
+/* line 815, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+#errorExplanation ul li {
+  margin: 4px;
+}
+
+/* line 819, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.flash.error {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  margin: auto;
+  padding: 15px;
+  background: lightsalmon;
+  color: #AD0008;
+  border-left: 8px solid darksalmon;
+  text-align: center;
+}
+
+/* line 822, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+.flash.notice,
+.flash.success {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  margin: auto;
+  padding: 15px;
+  background: #DFF2BF;
+  color: #4F8A10;
+  border-left: 8px solid #95a37d;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1149px) {
+  /* line 830, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  #product-details #wrapper [data-hook="product_show"] {
+    width: 95%;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  /* line 836, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  #product-details #wrapper [data-hook="product_show"] .columns.six.alpha {
+    float: none;
+    margin-right: 0;
+  }
+  /* line 839, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  #product-details #wrapper [data-hook="product_show"] .columns.ten.omega {
+    margin-left: 0;
+    width: 600px;
+    padding-left: 0;
+  }
+  /* line 843, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  #product-details #wrapper #breadcrumbs {
+    width: 600px;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  /* line 849, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  .about-wrapper .substantive .images {
+    margin-top: 20px;
+    margin-left: 0;
+    width: 100%;
+    height: 230px;
+  }
+  /* line 854, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  .about-wrapper .substantive .images .higher,
+  .about-wrapper .substantive .images .lower {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    height: 100%;
+    width: 45%;
+  }
+  /* line 859, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  .about-wrapper .substantive .images .higher {
+    margin-right: 20px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  /* line 868, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  #product-details #wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* line 871, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  #greeting {
+    max-width: 85%;
+    padding: 30px 20px;
+  }
+
+  /* line 876, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  .about-wrapper .substantive .text-holder {
+    padding: 30px 60px;
+  }
+  /* line 878, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  .about-wrapper .end {
+    padding: 30px 60px;
+  }
+
+  /* line 881, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  .progress-steps li {
+    border-top: 1px solid #F2EFE4;
+  }
+
+  /* line 883, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  #checkout {
+    margin-top: 0;
+  }
+
+  /* line 886, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  #checkout_form_delivery #shipping_method {
+    border-left: none;
+    border-right: none;
+  }
+
+  /* line 889, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  #checkout_form_payment #payment {
+    border-left: none;
+    border-right: none;
+  }
+
+  /* line 892, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  #checkout_form_confirm #order_details {
+    border-left: none;
+    border-right: none;
+    padding: 20px 10px;
+  }
+  /* line 895, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  #checkout_form_confirm #order_details .row.steps-data {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  /* line 897, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  #checkout_form_confirm #order_details .row.steps-data .columns {
+    padding-bottom: 30px;
+  }
+
+  /* line 900, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  body#cart #content {
+    border-right: none;
+    border-left: none;
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  /* line 907, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  .top-banner .banner-overlay {
+    padding-top: 40px;
+  }
+  /* line 909, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  .top-banner .banner-overlay h2 {
+    margin-bottom: 10px;
+  }
+
+  /* line 912, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  [data-hook="homepage_products"] #welcome-wrapper {
+    height: 220px;
+  }
+  /* line 915, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  [data-hook="homepage_products"] #welcome-wrapper .overlay h2 {
+    padding-top: 50px;
+  }
+
+  /* line 919, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  #checkout_form_confirm #order_details td[data-hook="order_item_image"] {
+    width: 0;
+    padding: 0;
+  }
+  /* line 922, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  #checkout_form_confirm #order_details td[data-hook="order_item_image"] img {
+    display: none;
+  }
+
+  /* line 926, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  #product-details #wrapper #breadcrumbs {
+    max-width: 400px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  /* line 932, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  #product-details #wrapper [data-hook="product_show"] #main-image img {
+    max-width: 400px;
+  }
+  /* line 934, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  #product-details #wrapper [data-hook="product_show"] .columns.ten.omega {
+    max-width: 400px;
+    margin: auto;
+  }
+
+  /* line 939, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  body#cart #content .cart-item-image {
+    padding: 0;
+  }
+  /* line 941, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  body#cart #content .cart-item-image img {
+    display: none;
+  }
+  /* line 944, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  body#cart #content .cart-item-quantity input {
+    width: 50px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  /* line 948, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  html {
+    font-size: 14px;
+  }
+
+  /* line 951, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  #footer .content-wrapper {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-top: 30px;
+  }
+  /* line 956, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  #footer .content-wrapper .sustainability ul,
+  #footer .content-wrapper .contact ul {
+    margin-bottom: 30px;
+  }
+
+  /* line 959, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  #products li {
+    max-width: 160px;
+  }
+
+  /* line 961, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  #wrapper {
+    padding-bottom: 0;
+  }
+
+  /* line 963, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  .about-wrapper {
+    margin-bottom: 50px;
+  }
+  /* line 965, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  .about-wrapper .banner {
+    height: 250px;
+  }
+  /* line 968, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  .about-wrapper .substantive .text-holder {
+    padding: 20px 30px;
+  }
+  /* line 970, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  .about-wrapper .substantive .images {
+    height: 350px;
+  }
+  /* line 972, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  .about-wrapper .substantive .images .higher {
+    margin-right: 0;
+  }
+  /* line 974, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  .about-wrapper .substantive .images .higher,
+  .about-wrapper .substantive .images .lower {
+    height: 165px;
+    width: 100%;
+  }
+  /* line 978, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  .about-wrapper .end {
+    padding: 20px 30px;
+  }
+
+  /* line 980, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  .user-info {
+    margin-bottom: 40px;
+    margin-left: 20px;
+    padding-left: 15px;
+  }
+  /* line 985, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  .user-info dl dd {
+    margin-left: 10px;
+  }
+
+  /* line 987, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  #errorExplanation,
+  .flash.errors,
+  .flash.error,
+  .flash.notice,
+  .flash.success {
+    border: none;
+  }
+
+  /* line 993, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  #content > .login-holder {
+    max-width: 100%;
+    margin: 0;
+  }
+  /* line 996, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  #content > .login-holder #existing-customer,
+  #content > .login-holder #new-customer,
+  #content > .login-holder #forgot-password {
+    width: 100%;
+    margin-top: 0;
+  }
+  /* line 1001, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  #content > .login-holder [data-hook="login"],
+  #content > .login-holder [data-hook="signup"],
+  #content > .login-holder form.new_spree_user,
+  #content > .login-holder #forgot-password > p {
+    margin-left: 10px;
+  }
+
+  /* line 1006, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  #registration {
+    padding: 30px 0 0 10px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  /* line 1009, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  #registration #guest_checkout {
+    margin: 0 0 40px 0;
+  }
+
+  /* line 1013, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  #checkout #checkout-information select,
+  #checkout #checkout-information input {
+    max-width: 220px;
+    margin-bottom: 10px;
+  }
+
+  /* line 1017, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  #checkout_form_address {
+    margin: 0 20px;
+  }
+  /* line 1019, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  #checkout_form_address #shipping,
+  #checkout_form_address #billing {
+    width: 260px;
+    padding: 10px;
+    margin-bottom: 40px;
+  }
+  /* line 1024, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  #checkout_form_address #shipping p,
+  #checkout_form_address #billing p {
+    margin-bottom: 10px;
+  }
+  /* line 1027, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  #checkout_form_address #shipping .field.checkbox {
+    margin-top: 10px;
+  }
+  /* line 1029, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  #checkout_form_address .columns.omega.six {
+    min-height: 100px;
+  }
+
+  /* line 1031, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  .progress-steps {
+    border-right: 1px solid #F2EFE4;
+  }
+  /* line 1033, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  .progress-steps li:first-child {
+    border-left: 1px solid #F2EFE4;
+  }
+
+  /* line 1036, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  #checkout_form_delivery #shipping_method {
+    padding: 30px 10px;
+    border: none;
+  }
+
+  /* line 1042, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  #checkout_form_confirm #order_details td[data-hook="order_item_description"] p {
+    display: none;
+  }
+
+  /* line 1046, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  #product-details #wrapper #breadcrumbs {
+    max-width: 280px;
+  }
+  /* line 1049, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  #product-details #wrapper [data-hook="product_show"] #main-image {
+    width: 280;
+  }
+  /* line 1051, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  #product-details #wrapper [data-hook="product_show"] #main-image img {
+    height: 280px;
+    width: 280px;
+  }
+  /* line 1054, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  #product-details #wrapper [data-hook="product_show"] div.columns.ten.omega {
+    max-width: 280px;
+    margin-bottom: 40px;
+  }
+
+  /* line 1058, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  body#cart #content {
+    padding: 20px 10px;
+    margin-bottom: 40px;
+  }
+  /* line 1062, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  body#cart #content .cart-item-quantity input {
+    width: 30px;
+  }
+  /* line 1065, /home/lewington/xxx/rails/cedar_coast/app/assets/stylesheets/spree/frontend/all.sass */
+  body#cart #content .cart-item-description a {
+    font-size: 1rem;
+  }
+}
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
