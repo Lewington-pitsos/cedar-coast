@@ -325,11 +325,18 @@ h1.taxon-title
       h1
         margin-bottom: 60px
     [data-hook="product_show"]
+      h6
+        font-size: 1.4rem
+        color: $ftc-lite
+        margin: 30px 0 10px 0
       margin-left: 70px
       margin-right: 70px
       display: flex
       flex-wrap: wrap
       .columns.six.alpha
+        h6
+          text-align: center
+          margin: 40px 0 15px 0
         flex-basis: 300px
         flex-grow: 0
         flex-shrink: 1
@@ -342,13 +349,18 @@ h1.taxon-title
           display: inline-block
           margin: 20px 0 0 20px
         #product-thumbnails
+          border-top: 1px solid $ftc-lite
+          border-bottom: 1px solid $ftc-lite
+          padding-bottom: 15px
+          display: flex
+          flex-wrap: wrap
+          justify-content: space-between
           li
-            height: 80px
-            margin: 15px 20px 0 0
-            display: inline-block
+            width: 30%
+            margin: 15px 0 0 0
             img
-              border-radius: 3px
-              max-width: 50px
+              border-radius: $radius
+              width: 100%
               height: 100%
       .columns.ten.omega
         flex-basis: 300px
@@ -369,18 +381,11 @@ h1.taxon-title
           margin-top: 20px
         td
           padding-right: 20px
-        h6
-          font-size: 1.4rem
-          color: $ftc-lite
-          margin: 30px 0 10px 0
         #product-properties
         #product-variants
           margin-bottom: 50px
           li
             margin: 5px 0 0 10px
-
-
-
 
 #footer
   clear: both
@@ -876,39 +881,46 @@ $about-margin: 20px
   border-right: none
 
 @media only screen and (max-width: 850px)
-#greeting
-    max-width: 85%
-    padding: 30px 20px
-  .about-wrapper
-    .substantive
-      .text-holder
+  #greeting
+      max-width: 85%
+      padding: 30px 20px
+    .about-wrapper
+      .substantive
+        .text-holder
+          padding: 30px 60px
+      .end
         padding: 30px 60px
-    .end
-      padding: 30px 60px
-  .progress-steps
-    li
-      border-top: 1px solid $light-text
-  #checkout
-    margin-top: 0
-  #checkout_form_delivery
-    #shipping_method
-      @include small-step-box
-  #checkout_form_payment
-    #payment
-      @include small-step-box
-  #checkout_form_confirm
-    #order_details
-      @include small-step-box
-      padding: 20px 10px
-      .row.steps-data
-        flex-wrap: wrap
-        .columns
-          padding-bottom: 30px
-  body#cart
-    #content
-      border-right: none
-      border-left: none
-      padding: 20px
+    .progress-steps
+      li
+        border-top: 1px solid $light-text
+    #checkout
+      margin-top: 0
+    #checkout_form_delivery
+      #shipping_method
+        @include small-step-box
+    #checkout_form_payment
+      #payment
+        @include small-step-box
+    #checkout_form_confirm
+      #order_details
+        @include small-step-box
+        padding: 20px 10px
+        .row.steps-data
+          flex-wrap: wrap
+          .columns
+            padding-bottom: 30px
+    body#cart
+      #content
+        border-right: none
+        border-left: none
+        padding: 20px
+  #product-details
+    #wrapper
+      [data-hook="product_show"]
+        .columns.six.alpha
+          #product-thumbnails
+            li
+              width: 16%
 
 @media only screen and (max-width: 640px)
   .top-banner

@@ -1,5 +1,6 @@
 <%# no need for thumbnails unless there is more than one image %>
 <% if (@product.images + @product.variant_images).uniq.size > 1 %>
+  <h6>Alternative Styles</h6>
   <ul id="product-thumbnails" class="thumbnails inline" data-hook>
     <% @product.images.each do |i| %>
       <li class='tmb-all tmb-<%= i.viewable.id %>'>
