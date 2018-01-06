@@ -19,6 +19,7 @@ gem 'solidus'
 gem 'solidus_auth_devise'
 gem "solidus_gateway"
 gem 'bootstrap-sass'
+gem 'solidus_paypal_braintree', github: 'solidusio/solidus_paypal_braintree', branch: :master
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
