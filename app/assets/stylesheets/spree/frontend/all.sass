@@ -138,7 +138,7 @@ span.required
   background: $b-garnish
   padding: 60px 0
   border-radius: $radius
-  max-width: 800px
+  max-width: 820px
   margin: auto
   margin-bottom: 60px
   text-align: center
@@ -397,10 +397,11 @@ h1.taxon-title
   .content-wrapper
     padding-top: 100px
     display: flex
-    justify-content: space-around
+    justify-content: flex-start
     flex-wrap: wrap
     .sustainability,
-    .contact
+    .contact,
+    .google-map
       color: $light-text
       margin: 0 30px
       h6
@@ -413,11 +414,15 @@ h1.taxon-title
         li
           font-size: 1rem
           padding: 10px
+    .google-map
+      width: 250px
+      height: 250px
   #page-top
     float: right
     display: inline-block
     background: $pebbles
     color: $light-text
+    margin-top: 30px
     padding: 20px
     padding-right: 40px
     text-align: right
