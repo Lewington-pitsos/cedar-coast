@@ -9,4 +9,3 @@
 //= require spree/frontend
 //= require_tree .
 //= require solidus_paypal_braintree/frontend
-//= require spree/frontend/paypal_button

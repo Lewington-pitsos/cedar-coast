@@ -2,6 +2,18 @@
 # See http://docs.solidus.io/Spree/AppConfiguration.html for details
 
 Spree.config do |config|
+
+  # braintree defult settings
+  config.static_model_preferences.add(
+    SolidusPaypalBraintree::Gateway,
+    'braintree_credentials', {
+      environment: Rails.env.production? ? 'production' : 'sandbox',
+      merchant_id: ENV['8dwy46bvdxhc2rtr'],
+      public_key: ENV['z2dss5q3cwxrf9vq'],
+      private_key: ENV['4fd450ca516a22074d1c09c1adfe7966']
+    }
+  )
+
   # Core:
 
   # Default currency for new sites
