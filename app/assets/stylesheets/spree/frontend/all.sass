@@ -782,17 +782,19 @@ $about-margin: 20px
   .banner
     width: 100%
     height: 400px
-    background: image-url('full_waterfall.JPG')
+    background: image-url('shop_2_desaturated.jpg')
+    background-position: 50% 65%
     @include image-holder
     margin-bottom: $about-margin
+  .text-holder
+    padding: 50px 100px
   .substantive
     display: flex
     flex-wrap: wrap
     justify-content: space-between
-    .text-holder
+    .first-text
       flex-grow: 2
       @include image-holder
-      padding: 50px 100px
       width: 501px
       background: $b-garnish
       text-align: justify
@@ -806,9 +808,10 @@ $about-margin: 20px
       flex-wrap: wrap
       align-content: space-between
       .higher
-        background: image-url('IMG_1998.jpg')
+        background: image-url('blue_water_and_mts.jpg')
+        background-position: 50% 30%
       .lower
-        background: image-url('full_waterfall.JPG')
+        background: image-url('foggy_mt.jpg')
       .higher,
       .lower
         @include image-holder
@@ -816,7 +819,6 @@ $about-margin: 20px
         height: 47.5%
   .end
     margin-top: $about-margin
-    padding: 50px 100px
     background: $b-dark
     color: $light-text
     @include image-holder
@@ -953,6 +955,9 @@ $about-margin: 20px
       .cart-item-quantity
         input
           width: 50px
+  .about-wrapper
+    .text-holder
+      padding: 20px 30px
 
 @media only screen and (max-width: 500px)
   html
@@ -975,8 +980,6 @@ $about-margin: 20px
     .banner
       height: 250px
     .substantive
-      .text-holder
-        padding: 20px 30px
       .images
         height: 350px
         .higher
@@ -985,8 +988,6 @@ $about-margin: 20px
         .lower
           height: 165px
           width: 100%
-    .end
-      padding: 20px 30px
   .user-info
     margin-bottom: 40px
     margin-left: 20px
