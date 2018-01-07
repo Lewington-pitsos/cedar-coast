@@ -49,6 +49,8 @@ $succ-garnish: #95a37d
 
 .hidden
   display: none
+body
+  position: relative
 
 html
   font-family: 'Raleway', sans-serif
@@ -422,7 +424,7 @@ h1.taxon-title
       max-width: 350px
       td
         padding: 5px 15px 0 5px
-  #page-top
+  .page-top
     float: right
     display: inline-block
     background: $pebbles
@@ -435,6 +437,30 @@ h1.taxon-title
       background: $d-pebbles
   .clear
     clear: both
+
+$clear-hl: rgba(211, 184, 83, 0.8)
+
+#mobile-menu
+  display: none
+  position: fixed
+  bottom: 0
+  background: $pebbles
+  width: 100%
+  ul
+    display: flex
+    justify-content: space-around
+  li
+    font-size: 1.4rem
+    flex-grow: 1
+    text-align: center
+    &:hover
+      background: $d-pebbles
+    a
+      color: $light-text
+      padding: 20px 0
+      display: block
+      width: 100%
+      height: 100%
 
 body#cart
   #content
@@ -968,6 +994,12 @@ $about-margin: 20px
   .about-wrapper
     .text-holder
       padding: 20px 30px
+  #mobile-menu
+    display: block
+  #footer
+    padding-bottom: 80px
+    .page-top
+      display: none
 
 @media only screen and (max-width: 500px)
   html
