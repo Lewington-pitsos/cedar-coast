@@ -49,8 +49,16 @@ $succ-garnish: #95a37d
 
 .hidden
   display: none
+
 body
   position: relative
+.main-navbar,
+#wrapper
+  max-width: 1250px
+  margin: auto
+#wrapper
+  padding-bottom: 200px
+  background: $b-basic
 
 html
   font-family: 'Raleway', sans-serif
@@ -110,9 +118,6 @@ span.required
 .button
   padding: 10px
 
-#wrapper
-  padding-bottom: 200px
-
 .top-banner
   background-image: image-url('pink_sky.jpg')
   background-position: 60%
@@ -121,6 +126,7 @@ span.required
     padding-top: 70px
     background-color: rgba(100, 200, 100, 0.4)
     height: 100%
+    border-bottom: 1px solid $pebbles
     h2,
     h1
       text-align: center
@@ -156,7 +162,6 @@ span.required
   color: $pebbles
   $light-text-space: nowrap
   width: 100%
-  border-bottom: 1px solid $pebbles
   padding: 20px 0 0 0
   font-size: 1.1em
   li
@@ -230,8 +235,13 @@ h3.home
 
 [data-hook="homepage_products"]
   #welcome-wrapper
-    width: 100%
+    position: absolute
+    width: 100vw
     height: 400px
+    left: 50%
+    right: 50%
+    margin-left: -50vw
+    margin-right: -50vw
     margin-bottom: 70px
     position: relative
     .welcome-banner,
@@ -397,6 +407,8 @@ h1.taxon-title
   background: $b-dark
   padding-bottom: 20px
   .content-wrapper
+    max-width: 1250px
+    margin: auto
     padding-top: 100px
     display: flex
     justify-content: flex-start
@@ -900,6 +912,13 @@ $about-margin: 20px
 .flash.success
   @include flash-message($succ-bak, $succ-garnish, $succ-col)
 
+@media only screen and (min-width: 1300px)
+  [data-hook="homepage_products"]
+    #welcome-wrapper
+      height: 550px
+      .overlay
+        h2
+          margin-top: 75px
 
 @media only screen and (max-width: 1149px)
   .about-wrapper
