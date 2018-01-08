@@ -1,9 +1,6 @@
 # Configure Solidus Preferences
 # See http://docs.solidus.io/Spree/AppConfiguration.html for details
-
-Spree.config do |config|
-
-  # braintree defult settings
+Spree::Config.configure do |config|
   config.static_model_preferences.add(
     SolidusPaypalBraintree::Gateway,
     'braintree_credentials', {
@@ -13,14 +10,17 @@ Spree.config do |config|
       private_key: ENV['4fd450ca516a22074d1c09c1adfe7966']
     }
   )
+end
 
+
+Spree.config do |config|
   # Core:
 
   # Default currency for new sites
   config.currency = "USD"
 
   # from address for transactional emails
-  config.mails_from = "store@example.com"
+  config.mails_from = "tansgiftshop.com"
 
   # Uncomment to stop tracking inventory levels in the application
   # config.track_inventory_levels = false
