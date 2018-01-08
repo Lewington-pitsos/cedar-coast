@@ -47,6 +47,16 @@ $succ-garnish: #95a37d
   background: $bak
   color: $col
 
+@mixin flash-message($main, $garnish, $text)
+    box-sizing: border-box
+    width: 100%
+    margin: auto
+    padding: 15px
+    background: $main
+    color: $text
+    border-left: 8px solid $garnish
+    text-align: center
+
 .hidden
   display: none
 
@@ -751,6 +761,8 @@ legend
 #order_summary,
 #checkout_form_confirm
   @include step-box(870px)
+  legend
+    margin-bottom: 40px
   .row.steps-data
     display: flex
     justify-content: space-between
@@ -783,6 +795,8 @@ legend
   h1
     text-align: center
     margin-bottom: 80px
+  .row.steps-data
+    margin-top: 20px
 
 #checkout-summary
   max-width: 980px
@@ -886,16 +900,6 @@ $about-margin: 20px
     @include image-holder
     h4
       margin-bottom: $about-margin
-
-@mixin flash-message($main, $garnish, $text)
-    box-sizing: border-box
-    width: 100%
-    margin: auto
-    padding: 15px
-    background: $main
-    color: $text
-    border-left: 8px solid $garnish
-    text-align: center
 
 #errorExplanation,
 .flash.errors
