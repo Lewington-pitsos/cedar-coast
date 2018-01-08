@@ -104,6 +104,7 @@ select
   background: $light-text
 
 button.primary,
+a.button,
 input.button,
 .continue.button,
 .cart-button
@@ -720,28 +721,28 @@ legend
   p
     margin-bottom: 20px
 
+#order_summary,
 #checkout_form_confirm
-  #order_details
-    @include step-box(870px)
-    .row.steps-data
-      display: flex
-      margin-bottom: 40px
-      .columns.omega.four,
-      .columns.alpha.four
-        font-size: 0.8rem
-        margin: 0 8px
-        h6
-          font-weight: bold
-          padding-bottom: 6px
-          border-bottom: 1px solid $b-garnish
-          margin-bottom: 10px
+  @include step-box(870px)
+  .row.steps-data
+    display: flex
+    margin-bottom: 40px
+    .columns.omega.four,
+    .columns.alpha.four
+      font-size: 0.8rem
+      margin: 0 8px
+      h6
+        font-weight: bold
+        padding-bottom: 6px
+        border-bottom: 1px solid $b-garnish
+        margin-bottom: 10px
+      div
+        br
+          margin: 3px 0
         div
-          br
-            margin: 3px 0
-          div
-            margin: 6px 0
+          margin: 6px 0
   hr
-    visibility: displayden
+    visibility: hidden
   table
     th
       @include block-heading
@@ -770,6 +771,14 @@ legend
   div.form-buttons
     max-width: 992px
     margin: auto
+
+#order_summary
+  margin-top: 60px
+  legend
+    display: none
+  h1
+    text-align: center
+    margin-bottom: 80px
 
 #checkout-summary
   max-width: 980px
@@ -872,9 +881,6 @@ $about-margin: 20px
     @include image-holder
     h4
       margin-bottom: $about-margin
-
-
-
 
 @mixin flash-message($main, $garnish, $text)
     box-sizing: border-box
