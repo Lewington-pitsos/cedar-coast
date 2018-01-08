@@ -12,7 +12,6 @@ Spree::Config.configure do |config|
   )
 end
 
-
 Spree.config do |config|
   # Core:
 
