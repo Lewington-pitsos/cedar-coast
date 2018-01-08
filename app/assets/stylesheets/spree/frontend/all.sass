@@ -721,28 +721,7 @@ legend
   p
     margin-bottom: 20px
 
-#order_summary,
-#checkout_form_confirm
-  @include step-box(870px)
-  .row.steps-data
-    display: flex
-    margin-bottom: 40px
-    .columns.omega.four,
-    .columns.alpha.four
-      font-size: 0.8rem
-      margin: 0 8px
-      h6
-        font-weight: bold
-        padding-bottom: 6px
-        border-bottom: 1px solid $b-garnish
-        margin-bottom: 10px
-      div
-        br
-          margin: 3px 0
-        div
-          margin: 6px 0
-  hr
-    visibility: hidden
+@mixin standard_table
   table
     th
       @include block-heading
@@ -768,9 +747,34 @@ legend
     tfoot#shipment-total
       color: #666
       font-size: 1rem
+
+#order_summary,
+#checkout_form_confirm
+  @include step-box(870px)
+  .row.steps-data
+    display: flex
+    justify-content: space-between
+    margin-bottom: 40px
+    .columns.omega.four,
+    .columns.alpha.four
+      font-size: 0.8rem
+      margin: 0 8px
+      h6
+        font-weight: bold
+        padding-bottom: 6px
+        border-bottom: 1px solid $b-garnish
+        margin-bottom: 10px
+      div
+        br
+          margin: 3px 0
+        div
+          margin: 6px 0
+  hr
+    visibility: hidden
   div.form-buttons
     max-width: 992px
     margin: auto
+  @include standard_table
 
 #order_summary
   margin-top: 60px
@@ -819,6 +823,7 @@ legend
   .account-my-orders
     h3
       margin-bottom: 20px
+    @include standard_table
 
 @mixin image-holder
   background-size: cover
