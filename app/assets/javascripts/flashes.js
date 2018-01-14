@@ -1,3 +1,3 @@
 $(window).on('turbolinks:load', function() {
-  $('.flash').delay(3000).fadeOut( 400 )
+  $('.flash').delay(6000).fadeOut( 400 )
 });
