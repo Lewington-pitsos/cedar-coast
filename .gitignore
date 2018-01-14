@@ -21,7 +21,7 @@
 /yarn-error.log
 
 .byebug_history
-/app/assets/images/*
+public/spree/*
 config/database.yml\nconfig/secrets.yml
 config/database.yml\nconfig/secrets.yml
 pad.rb

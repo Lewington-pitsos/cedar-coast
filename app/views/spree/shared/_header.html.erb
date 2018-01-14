@@ -5,6 +5,7 @@
 </header> -->
 <nav class="main-navbar" id='main-nav-bar'>
   <aside class="cart-info">
+    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
     <ul id="main-nav-bar" class="inline" data-hook>
       <li id="link-to-cart" data-hook>
         <noscript>
@@ -16,7 +17,9 @@
     <script>Spree.fetch_cart('<%= j spree.cart_link_path %>')</script>
   </aside>
   <ul class="main">
-    <li id="home-link" data-hook><%= link_to t('spree.home'), spree.root_path %></li>
+    <li id="home-link" data-hook>
+      <a href="<%= spree.root_path %>"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+    </li>
     <li><%= link_to 'About', about_path %></li>
     <li><%= link_to 'Contact Us', '#', class: 'contact-us' %></li>
     <li class="dropdown-wrapper">
