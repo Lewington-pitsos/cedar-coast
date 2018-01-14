@@ -1,6 +1,6 @@
 <% @body_id = 'cart' %>
 <div data-hook="cart_container">
-  <h1 class="cart"><%= t('spree.cart') %></h1>
+  <h1 class="cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i><%= t('spree.cart') %></h1>
 
   <% if @order.line_items.empty? %>
 
@@ -22,7 +22,7 @@
           <div class="links columns sixteen alpha omega" data-hook="cart_buttons">
             <%= order_form.text_field :coupon_code, size: 10, placeholder: t('spree.coupon_code') %>
             <%= button_tag class: 'button checkout primary', id: 'checkout-link', name: 'checkout' do %>
-              <%= t('spree.checkout') %>
+              <i class="fa fa-credit-card-alt" aria-hidden="true"></i><%= t('spree.checkout') %>
             <% end %>
             <%= button_tag class: 'primary', id: 'update-button' do %>
               <%= t('spree.update') %>

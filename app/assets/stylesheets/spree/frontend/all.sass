@@ -12,7 +12,8 @@ $pebbles: #5F6573
 $t-garnish: rgba(210, 181,139, 0.5)
 $d-pebbles: #4c505c
 
-$greyed-out: #777
+$greyed-out: #aaa
+$greyed-text: #d5ddd7
 $fancy-text-col: $b-dark
 $ftc-lite: #9b6f4a
 $ftc-lighter: #bd8f6d
@@ -88,6 +89,8 @@ h1
   font-size: 2.4em
   color: $fancy-text-col
   font-weight: bold
+  .fa
+    color: $b-dark
 
 h2
   font-size: 2rem
@@ -617,6 +620,7 @@ div.registration-holder,
     flex-grow: 1
     width: 120px
     @include basic-button($greyed-out)
+    color: $greyed-text
     text-align: center
     border-left: 1px solid $light-text
     padding: 0
