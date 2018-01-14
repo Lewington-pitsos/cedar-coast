@@ -77,7 +77,7 @@ body
   max-width: 1300px
   margin: auto
 #wrapper
-  padding-bottom: 200px
+  padding-bottom: 50px
   background: $b-basic
 
 html
@@ -1069,6 +1069,12 @@ $about-margin: 20px
         flex-direction: column-reverse
         align-items: center
         text-align: center
+        .columns.six.alpha
+          max-width: 520px
+          margin-right: -40px
+        #product-images
+          display: flex
+          justify-content: flex-end
         .columns.ten.omega
           margin-bottom: 50px
 
@@ -1212,7 +1218,6 @@ $about-margin: 20px
         margin: 0 auto 20px auto
       [data-hook="product_show"]
         div.columns.six.alpha
-          margin-right: 0
           width: 100%
           #main-image
             img
