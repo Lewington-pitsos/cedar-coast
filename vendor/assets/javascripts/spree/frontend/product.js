@@ -26,8 +26,7 @@ $(window).on('turbolinks:load', function() {
       return false;
     });
     thumbnails.find("li").on("mouseenter", function(event) {
-      var mainWidth = $("#main-image img").width()
-      console.log(mainWidth);
+      var mainWidth = $("#main-image img").width();
       $("#main-image img").attr(
         "src",
         $(event.currentTarget)
