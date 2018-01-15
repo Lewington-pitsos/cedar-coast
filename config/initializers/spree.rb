@@ -16,7 +16,7 @@ Spree.config do |config|
   # Core:
 
   # Default currency for new sites
-  config.currency = "USD"
+  config.currency = "CAD"
 
   # from address for transactional emails
   config.mails_from = "tansgiftshop.com"
