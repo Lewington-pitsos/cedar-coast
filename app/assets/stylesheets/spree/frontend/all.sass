@@ -288,6 +288,9 @@ h3.home
       background-image: image-url('shop_2_desaturated.jpg')
     .three
       background-image: image-url('tree_stump_scaled.jpg')
+    .four
+      background-image: image-url('foggy_mt.jpg')
+      background-position: 100% 5%
     .overlay
       text-align: center
       background-color: rgba(121,	78,	40, 0.6)
@@ -747,6 +750,43 @@ legend
   input[type="radio"]:checked
     visibility: hidden
     margin-left: -20px
+  #payment-methods
+    position: relative
+    #card_number2,
+    #card_expiry2,
+    #card_code2
+      margin: 8px 0 25px 0
+      max-width: 220px
+      border: 1px solid $b-garnish
+      height: 30px
+      padding: 5px 0 5px 10px
+      background: $light-text
+    #card_code2
+      max-width: 70px
+    .braintree-hosted-fields,
+      margin-top: 30px
+      padding: 40px 20px 20px 20px
+      border: 1px solid $b-garnish
+      &::before
+        content: 'Credit Card'
+        position: absolute
+        top: 130px
+        background: $b-basic
+        padding: 0 8px
+        font-size: 1.4rem
+        color: $b-dark
+    .paypal-button-widget
+      display: block
+      padding: 40px 20px 20px 20px
+      border: 1px solid $b-garnish
+      &::before
+        content: 'Paypal'
+        position: absolute
+        top: -10px
+        background: $b-basic
+        padding: 0 8px
+        font-size: 1.4rem
+        color: $b-dark
 
 
 @mixin standard_table
@@ -902,10 +942,11 @@ $about-margin: 20px
       flex-wrap: wrap
       align-content: space-between
       .higher
-        background: image-url('blue_water_and_mts.jpg')
-        background-position: 50% 30%
+        background: image-url('tan_river.jpg')
+        background-position: 50% 100%
       .lower
-        background: image-url('foggy_mt.jpg')
+        background: image-url('awesome_sky_800px.jpg')
+        background-position: 50% 100%
       .higher,
       .lower
         @include image-holder
@@ -951,43 +992,6 @@ $about-margin: 20px
 .flash.success
   @include flash-message($succ-bak, $succ-garnish, $succ-col)
 
-#payment-methods
-  position: relative
-  #card_number2,
-  #card_expiry2,
-  #card_code2
-    margin: 8px 0 25px 0
-    max-width: 220px
-    border: 1px solid $b-garnish
-    height: 30px
-    padding: 5px 0 5px 10px
-    background: $light-text
-  #card_code2
-    max-width: 70px
-  .braintree-hosted-fields,
-    margin-top: 30px
-    padding: 40px 20px 20px 20px
-    border: 1px solid $b-garnish
-    &::before
-      content: 'Credit Card'
-      position: absolute
-      top: 130px
-      background: $b-basic
-      padding: 0 8px
-      font-size: 1.4rem
-      color: $b-dark
-  .paypal-button-widget
-    display: block
-    padding: 40px 20px 20px 20px
-    border: 1px solid $b-garnish
-    &::before
-      content: 'Paypal'
-      position: absolute
-      top: -10px
-      background: $b-basic
-      padding: 0 8px
-      font-size: 1.4rem
-      color: $b-dark
 
 
 
