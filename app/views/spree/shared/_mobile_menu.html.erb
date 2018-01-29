@@ -1,8 +1,14 @@
 <ul>
-  <li id="home-link" data-hook><%= link_to t('spree.home'), spree.root_path %></li>
-  <li><%= link_to 'Contact Us', '#', class: 'contact-us' %></li>
-  <li data-hook>
-    <%= link_to t('spree.cart'), spree.cart_path %>
+  <li id="home-link" data-hook>
+    <a href="<%= spree.root_path %>"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
   </li>
-  <li><%= link_to 'Page Top', '#', class: 'page-top' %></li>
+  <li>
+    <a href="#" class="contact-us"><i class="fa fa-arrow-down" aria-hidden="true"></i>Contact Us</a>
+  </li>
+  <li data-hook>
+    <a href="<%= spree.cart_path %>"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Cart</a>
+  </li>
+  <li>
+    <a href="#" class="page-top"><i class="fa fa-arrow-up" aria-hidden="true"></i>Page Top</a>
+  </li>
 </ul>
