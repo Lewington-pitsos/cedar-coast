@@ -1,20 +1,29 @@
 $(window).on('turbolinks:load', function() {
   var loader = $("#loadingOverlay");
   var stillLoading = true;
+  $(".overlay-thumb").fadeOut(0);
 
   function fadeInLoader() {
+    // waits an interval of 300 ms
+    // if at the end, the main image hasn't loaded
+    //  shows the spining loader overlay
     stillLoading = true
     setTimeout(function() {
       if (stillLoading) {
+        // adjust the overlay height to match the current image
+        var currentHeight = $("#main-image img").height()
+        loader.height(currentHeight);
+
         loader.css('display', 'flex');
-        loader.fadeIn(300);
+        loader.fadeIn(200);
       }
     }, 300);
   }
   function fadeOutLoader() {
+    // as soon as the image in question has loaded, the loading spinner overlay
     $("#main-image img").on("load", function() {
       stillLoading = false;
-      loader.fadeOut(300);
+      loader.fadeOut(200);
       loader.css('display', 'none');
     });
   }
@@ -55,8 +64,9 @@ $(window).on('turbolinks:load', function() {
       return false;
     });
     thumbnails.find("li").on("mouseenter", function(event) {
+      $(event.currentTarget).find(".overlay-thumb").fadeIn(200);
       var mainWidth = $("#main-image img").width();
-      fadeInLoader()
+      fadeInLoader();
       $("#main-image img").attr(
         "src",
         $(event.currentTarget)
@@ -67,6 +77,7 @@ $(window).on('turbolinks:load', function() {
       fadeOutLoader();
     });
     thumbnails.find("li").on("mouseleave", function(event) {
+      $(event.currentTarget).find(".overlay-thumb").fadeOut(200);
       $("#main-image img").attr("src", $("#main-image").data("selectedThumb"));
     });
   };

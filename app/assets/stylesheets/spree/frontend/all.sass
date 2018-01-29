@@ -18,6 +18,7 @@ $greyed-text: #d5ddd7
 $fancy-text-col: $b-dark
 $ftc-lite: #9b6f4a
 $ftc-lighter: #bd8f6d
+$overlay-bg: rgba(0, 0, 0, 0.4)
 
 $radius: 4px
 
@@ -59,6 +60,15 @@ $succ-garnish: #95a37d
     border-left: 8px solid $garnish
     text-align: center
 
+.overlay-thumb
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  border-radius: $radius
+  background: white
+  background: $overlay-bg
 
 .fa
   margin-right: 4px
@@ -403,6 +413,7 @@ h1.taxon-title
             flex-wrap: wrap
             justify-content: space-between
             li
+              position: relative
               width: 45%
               margin: 0 0 15px 0
               img
@@ -986,8 +997,9 @@ $about-margin: 20px
   width: 100%
   position: absolute
   background: white
-  background: rgba(255, 255, 255, 0.4)
+  background: $overlay-bg
   z-index: 999
+  border-radius: $radius
   display: flex
   justify-content: center
   align-items: center
