@@ -36,7 +36,8 @@ $(window).on('turbolinks:load', function() {
         .eq(0)
         .addClass("selected");
     }
-    thumbnails.find("a").on("click", function(event) {
+    thumbnails.find("li").on("click", function(event) {
+      event.currentTarget = $(event.currentTarget).find('a');
       $("#main-image").data(
         "selectedThumb",
         $(event.currentTarget).attr("href")

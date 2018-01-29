@@ -413,6 +413,8 @@ h1.taxon-title
             flex-wrap: wrap
             justify-content: space-between
             li
+              &:hover
+                cursor: pointer
               position: relative
               width: 45%
               margin: 0 0 15px 0
@@ -436,11 +438,11 @@ h1.taxon-title
               padding: 10px
               &:hover
                 background: $b-garnish
+                cursor: pointer
             input
               display: none
               &:checked ~ label
                 background: $b-garnish
-
         #product-price
           font-size: 1.2em
           color: $ftc-lite
