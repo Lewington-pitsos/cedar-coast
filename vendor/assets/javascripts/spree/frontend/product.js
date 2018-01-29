@@ -30,7 +30,7 @@ $(window).on('turbolinks:load', function() {
           .attr('class')
           .replace(/[^0-9.]/g, '');
 
-        var varientBox = $(`#product-variants input[type="radio"][value="${variantId}"]`);
+        var varientBox = $('#product-variants input[type="radio"][value="' + variantId + '"]');
 
         varientBox.prop('checked', true);
 
@@ -54,7 +54,7 @@ $(window).on('turbolinks:load', function() {
   Spree.showVariantImages = function(variantId) {
     var currentThumb = $("#" + $("#main-image").data("selectedThumbId"));
     if (!currentThumb.hasClass("vtmb-" + variantId)) {
-      var thumb = $($(`#product-images ul.thumbnails li:visible.vtmb.tmb-${variantId}`).eq(0));
+      var thumb = $($("#product-images ul.thumbnails li:visible.vtmb.tmb-" + variantId).eq(0));
       if (!(thumb.length > 0)) {
         thumb = $($("#product-images ul.thumbnails li:visible").eq(0));
       }
