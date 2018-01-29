@@ -1,5 +1,7 @@
 {
   "name": "cedar_coast_site",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "spin": "0.0.1"
+  }
 }
