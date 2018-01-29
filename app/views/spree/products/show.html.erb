@@ -6,6 +6,11 @@
 
         <div id="product-images" data-hook="product_images">
           <div id="main-image" data-hook>
+            <div id="loadingOverlay">
+              <div class="loader">
+
+              </div>
+            </div>
             <%= render partial: 'image', locals: {size: :large} %>
           </div>
           <div id="thumbnails" data-hook>

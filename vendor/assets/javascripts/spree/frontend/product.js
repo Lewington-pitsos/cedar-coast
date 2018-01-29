@@ -1,5 +1,17 @@
 $(window).on('turbolinks:load', function() {
   var loader = $("#loadingOverlay");
+
+  function fadeInLoader() {
+    loader.css('display', 'flex');
+    loader.fadeIn(300);
+  }
+  function fadeOutLoader() {
+    $("#main-image img").on("load", function() {
+      loader.fadeOut(300);
+      loader.css('display', 'none');
+    });
+
+  }
   Spree.addImageHandlers = function() {
     var thumbnails = $("#product-images ul.thumbnails");
     $("#main-image").data("selectedThumb", $("#main-image img").attr("src"));
@@ -10,7 +22,6 @@ $(window).on('turbolinks:load', function() {
         .addClass("selected");
     }
     thumbnails.find("a").on("click", function(event) {
-      loader.css('display', 'flex')
       $("#main-image").data(
         "selectedThumb",
         $(event.currentTarget).attr("href")
@@ -26,7 +37,6 @@ $(window).on('turbolinks:load', function() {
         .parent("li")
         .addClass("selected");
 
-
       var variantId = $(event.currentTarget)
         .parent("li")
         .attr('class')
@@ -36,13 +46,11 @@ $(window).on('turbolinks:load', function() {
 
       varientBox.prop('checked', true);
 
-      loader.css('display', 'none')
       return false;
     });
     thumbnails.find("li").on("mouseenter", function(event) {
-      console.log('rooter tooter');
-      loader.css('display', 'flex')
       var mainWidth = $("#main-image img").width();
+      fadeInLoader()
       $("#main-image img").attr(
         "src",
         $(event.currentTarget)
@@ -50,8 +58,7 @@ $(window).on('turbolinks:load', function() {
           .attr("href")
       );
       $("#main-image img").width(mainWidth);
-      loader.css('display', 'none')
-      console.log('long range shoter');
+      fadeOutLoader();
     });
     thumbnails.find("li").on("mouseleave", function(event) {
       $("#main-image img").attr("src", $("#main-image").data("selectedThumb"));
@@ -68,7 +75,9 @@ $(window).on('turbolinks:load', function() {
       var newImg = thumb.find("a").attr("href");
       $("#product-images ul.thumbnails li").removeClass("selected");
       thumb.addClass("selected");
+      fadeInLoader();
       $("#main-image img").attr("src", newImg);
+      fadeOutLoader();
       $("#main-image").data("selectedThumb", newImg);
       $("#main-image").data("selectedThumbId", thumb.attr("id"));
     }
