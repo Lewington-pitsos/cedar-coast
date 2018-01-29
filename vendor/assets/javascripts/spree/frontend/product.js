@@ -1,16 +1,22 @@
 $(window).on('turbolinks:load', function() {
   var loader = $("#loadingOverlay");
+  var stillLoading = true;
 
   function fadeInLoader() {
-    loader.css('display', 'flex');
-    loader.fadeIn(300);
+    stillLoading = true
+    setTimeout(function() {
+      if (stillLoading) {
+        loader.css('display', 'flex');
+        loader.fadeIn(300);
+      }
+    }, 300);
   }
   function fadeOutLoader() {
     $("#main-image img").on("load", function() {
+      stillLoading = false;
       loader.fadeOut(300);
       loader.css('display', 'none');
     });
-
   }
   Spree.addImageHandlers = function() {
     var thumbnails = $("#product-images ul.thumbnails");
