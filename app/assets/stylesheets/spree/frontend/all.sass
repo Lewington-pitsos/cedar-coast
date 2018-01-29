@@ -413,6 +413,20 @@ h1.taxon-title
         #product-description
           .product-title
             margin-bottom: 30px
+          #product-variants
+            margin-bottom: 50px
+            li
+              max-width: 300px
+            label
+              display: block
+              padding: 10px
+              &:hover
+                background: $b-garnish
+            input
+              display: none
+              &:checked ~ label
+                background: $b-garnish
+
         #product-price
           font-size: 1.2em
           color: $ftc-lite
@@ -424,11 +438,7 @@ h1.taxon-title
           margin-top: 20px
         td
           padding-right: 20px
-        #product-properties
-        #product-variants
-          margin-bottom: 50px
-          li
-            margin: 5px 0 0 10px
+
 
 #footer
   clear: both
@@ -1126,6 +1136,10 @@ $about-margin: 20px
           justify-content: flex-end
         .columns.ten.omega
           margin-bottom: 50px
+          #product-description
+            #product-variants
+              li
+                margin: auto
 
 @media only screen and (max-width: 640px)
   .top-banner

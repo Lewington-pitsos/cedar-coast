@@ -34,8 +34,6 @@ $(window).on('turbolinks:load', function() {
 
         varientBox.prop('checked', true);
 
-        console.log(variantId);
-
       return false;
     });
     thumbnails.find("li").on("mouseenter", function(event) {
