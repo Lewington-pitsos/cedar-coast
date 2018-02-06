@@ -11,5 +11,9 @@ mount SolidusPaypalBraintree::Engine, at: '/solidus_paypal_braintree'
     get '/about' => 'home#about', as: :about
   end
 
+  Spree::Core::Engine.routes.draw do
+    get '/cedar-coast' => 'home#cedar_coast', as: :cedar_coast
+  end
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

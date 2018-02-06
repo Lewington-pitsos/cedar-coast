@@ -17,19 +17,14 @@
       </div>
     </div>
     <div class="overlay">
-      <h2>Welcome to Our Online Storefront</h2>
+      <h2>Welcome to Cedar Coast</h2>
       <p>
-        Feel free to browse...
+        This is the Soap-making side of our little shop. We offer a wide range of unique, hand-made soaps created form all natural ingrediants. Perfect for a gift.
       </p>
     </div>
   </div>
-
-  <div id="greeting">
-    <h2>All Products are sourced Ethically and Sustainably :D</h2>
-    <p>Check out our wide range of handmade Clothing, Jewelry and Gifts below</p>
-  </div>
-  <% if @extras_taxon %>
-    <% @extras_taxon.children.each do |taxon| %>
+  <% if @cc_taxon %>
+    <% @cc_taxon.children.each do |taxon| %>
       <% @taxon = taxon %>
       <div class="taxon" data-hook="taxon">
         <h3 class="subtaxon-title home"><%= @taxon.name %></h5>
