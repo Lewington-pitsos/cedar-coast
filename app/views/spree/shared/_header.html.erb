@@ -23,6 +23,9 @@
         <% @taxonomies.first.root.children.each do |taxonomy| %>
           <%= nav_tree(taxonomy, @taxon, 1) %>
         <% end %>
+        <% @taxonomies.last.root.children.each do |taxonomy| %>
+          <%= nav_tree(taxonomy, @taxon, 1) %>
+        <% end %>
       </ul>
     </li>
     <li>
