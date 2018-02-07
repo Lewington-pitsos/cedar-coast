@@ -7,28 +7,29 @@
 <div data-hook="homepage_products">
   <div id="welcome-wrapper">
     <div class="slideshow">
-      <div class="welcome-banner one">
+      <div class="welcome-banner one soap">
       </div>
-      <div class="welcome-banner two">
-      </div>
-      <div class="welcome-banner three">
-      </div>
-      <div class="welcome-banner four">
+      <div class="welcome-banner two soap">
       </div>
     </div>
-    <div class="overlay">
-      <h2>Welcome to Cedar Coast</h2>
-      <p>
-        This is the Soap-making side of our little shop. We offer a wide range of unique, hand-made soaps created form all natural ingrediants. Perfect for a gift.
-      </p>
+    <div class="overlay soap">
+        <h2>Cedar Coast</h2>
+        <p>
+          We make our own soaps and candles too!
+        </p>
     </div>
   </div>
+
+  <div id="greeting">
+    <h2>Cedar Coast is the Soap-making side of our little shop.</h2>
+    <p>We offer a wide range of unique, hand-made soaps created form all natural ingrediants. Perfect for a gift.</p>
+  </div>
+
   <% if @cc_taxon %>
     <% @cc_taxon.children.each do |taxon| %>
-      <% @taxon = taxon %>
       <div class="taxon" data-hook="taxon">
-        <h3 class="subtaxon-title home"><%= @taxon.name %></h5>
-        <%= render partial: 'spree/shared/products', locals: { products: taxon_preview(@taxon), taxon: @taxon } %>
+        <h3 class="subtaxon-title home"><%= taxon.name %></h5>
+        <%= render partial: 'spree/shared/products', locals: { products: taxon_preview(taxon), taxon: taxon } %>
       </div>
     <% end %>
   <% end %>

@@ -4,7 +4,7 @@ Spree::HomeController.class_eval do
   respond_to :html
 
   def about
-    
+
   end
 
   def cedar_coast
