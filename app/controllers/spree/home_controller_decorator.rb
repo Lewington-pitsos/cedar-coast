@@ -17,6 +17,8 @@ Spree::HomeController.class_eval do
     if @taxonomies[2]
       @cc_taxon = @taxonomies[2].root
     end
+
+    @dont_render_breadcrumbs = true
   end
 
   def index

@@ -27,6 +27,7 @@
 
   <% if @cc_taxon %>
     <% @cc_taxon.children.each do |taxon| %>
+    <% @taxon = @cc_taxon %>
       <div class="taxon" data-hook="taxon">
         <h3 class="subtaxon-title home"><%= taxon.name %></h5>
         <%= render partial: 'spree/shared/products', locals: { products: taxon_preview(taxon), taxon: taxon } %>

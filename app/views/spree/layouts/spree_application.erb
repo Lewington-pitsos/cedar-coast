@@ -23,8 +23,9 @@
         </div>
       </div>
       <div id="wrapper" class="row" data-hook>
-
-        <%= taxon_breadcrumbs(@taxon) %>
+        <% if !@dont_render_breadcrumbs %>
+          <%= taxon_breadcrumbs(@taxon) %>
+        <% end %>
 
         <div id="content" class="columns <%= !content_for?(:sidebar) ? "sixteen" : "twelve omega" %>" data-hook>
           <%= flash_messages %>
