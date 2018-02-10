@@ -5,4 +5,4 @@ setInterval(function() {
     .fadeIn(1500)
     .end()
     .appendTo('.slideshow');
-},  6000);
+},  5000);
