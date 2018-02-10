@@ -337,28 +337,29 @@ h3.home
   display: flex
   margin: auto
   flex-wrap: wrap
-  align-items: flex-start
+  align-items: stretch
   justify-content: space-around
   margin-top: 30px
   li
-    max-width: 240px
     border-radius: $radius
     background: $b-garnish
-    flex-grow: 1
-    display: flex
     justify-content: space-between
     align-items: space
     flex-direction: column
     margin: 0 25px 40px 25px
+    .square-img-wrapper
+      width: 240px
+      background-position: center center
+      background-size: cover
+      overflow: hidden
+      height: 0
+      padding-top: 100%
     .product-image
-      width: 100%
       margin-bottom: 5px
-      img
-        width: 100% !important
     a.info
       text-align: center
       display: block
-      margin: 0 10px
+      margin: 10px 0 10px 0
     .price-holder
       text-align: center
       margin-top: 15px
@@ -1255,7 +1256,8 @@ $about-margin: 20px
           margin-bottom: 30px
   #products
     li
-      max-width: 160px
+      .square-img-wrapper
+        width: 160px
   #wrapper
     padding-bottom: 0
   .about-wrapper

@@ -3,9 +3,9 @@
 
 <% if image && image.attachment? %>
   <% if itemprop %>
-    <%= image_tag image.attachment(size), itemprop: itemprop %>
+    <div class="square-img-wrapper" style="background-image: url(<%= image.attachment(size) %>)" itemprop="<%= itemprop %>"></div>
   <% else %>
-    <%= image_tag image.attachment(size) %>
+    <div class="square-img-wrapper" style="background-image: url(<%= image.attachment(size) %>)" </div>
   <% end %>
 <% else %>
   <span class="image-placeholder <%= size %>"></span>
