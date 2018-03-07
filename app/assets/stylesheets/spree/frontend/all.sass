@@ -223,13 +223,31 @@ span.required
       top: 100%
       border-top: 1px solid $pebbles
       width: 220px
+      margin-left: -80px
       &.hidden
         display: none
       li
         display: flex
-        padding: 8px
-        font-size: 0.9rem
+        justify-content: center
         align-items: center
+        flex-direction: column
+        border-bottom: 1px solid $pebbles
+        margin-right: 0
+        text-align: center
+        font-size: 0.9rem
+        &:hover
+          background: $pebbles
+        a
+          display: flex
+          justify-content: center
+          align-items: center
+          flex-direction: column
+          width: 100%
+          height: 100%
+          &:hover
+            color: $light-text
+          &.dropdown-button.active
+            height: 0 !important
     a
       vertical-align: middle
     a.devider
