@@ -12,7 +12,7 @@ gem 'capistrano-passenger'
 gem 'capistrano-rbenv', '~> 2.1'
 gem 'pg', '~> 0.18.4'
 
-gem "paperclip", "~> 6.0.0"
+gem "paperclip", "~> 5.2.0"
 gem 'pry'
 gem 'carrierwave', '~> 1.0'
 gem 'solidus'
