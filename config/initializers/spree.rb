@@ -1,3 +1,5 @@
+require_relative 'keys'
+
 # Configure Solidus Preferences
 # See http://docs.solidus.io/Spree/AppConfiguration.html for details
 Spree::Config.configure do |config|
@@ -5,9 +7,9 @@ Spree::Config.configure do |config|
     SolidusPaypalBraintree::Gateway,
     'braintree_credentials', {
       environment: Rails.env.production? ? 'production' : 'sandbox',
-      merchant_id: ENV['8dwy46bvdxhc2rtr'],
-      public_key: ENV['z2dss5q3cwxrf9vq'],
-      private_key: ENV['4fd450ca516a22074d1c09c1adfe7966']
+      merchant_id: ENV[HIDDEN_KEYS[:merchant_id],
+      public_key: ENV[HIDDEN_KEYS[:public_key],
+      private_key: ENV[HIDDEN_KEYS[:private_key]
     }
   )
 end
