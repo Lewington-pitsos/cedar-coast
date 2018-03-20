@@ -11,6 +11,8 @@ gem 'capistrano-rails', '~> 1.3'
 gem 'capistrano-passenger'
 gem 'capistrano-rbenv', '~> 2.1'
 gem 'pg', '~> 0.18.4'
+gem 'figaro'
+
 
 gem "paperclip", "~> 5.2.0"
 gem 'pry'
